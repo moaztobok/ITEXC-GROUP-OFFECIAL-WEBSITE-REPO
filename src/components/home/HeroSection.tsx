@@ -7,8 +7,7 @@ const HeroSection = () => {
         <div className='h-screen bg-black grid items-center text-white relative overflow-hidden'>
             <TdGraphics />
             <FadeElement >
-
-                <div className='wrapper flex flex-col md:justify-center items-center relative z-2  overflow-hidden'>
+                <div className='wrapper flex flex-col md:justify-center items-center md:gap-2 relative overflow-hidden'>
                     <h2 className='md:text-5xl md:w-auto w-full text-3xl font-semibold'>Next-gen enterprise</h2>
                     <h1 className='md:w-auto w-full md:text-7xl text-4xl font-bold'>Ready to persue excellence</h1>
                     <p className='md:w-auto w-full text-left md: mt-4 text-base '>Empowering businesses with cutting-edge software development, design, and system integration</p>
