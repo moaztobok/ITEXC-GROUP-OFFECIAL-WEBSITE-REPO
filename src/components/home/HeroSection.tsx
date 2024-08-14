@@ -4,7 +4,7 @@ import TdGraphics from './TdGraphics'
 
 const HeroSection = () => {
     return (
-        <div className='h-screen bg-black grid items-center text-white relative'>
+        <div className='h-screen bg-black grid items-center text-white relative overflow-hidden'>
             <TdGraphics />
             <FadeElement >
 
