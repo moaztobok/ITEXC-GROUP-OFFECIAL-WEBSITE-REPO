@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { FadeElement } from '../magicui/fade-text'
 import { CustomButton } from '../shared/Custom-btn'
 import TdGraphics from './TdGraphics'
@@ -6,6 +7,9 @@ const HeroSection = () => {
     return (
         <div className='h-screen bg-black grid items-center text-white relative overflow-hidden'>
             <TdGraphics />
+            <FadeElement className='absolute top-0 left-0 w-full h-full md:hidden'>
+                <Image width={1920} height={1080} alt='bg-image' src='/images/background.jpg' className='object-cover absolute w-full h-full top-0 left-0 md:hidden' />
+            </FadeElement>
             <FadeElement >
                 <div className='wrapper flex flex-col md:justify-center items-center md:gap-2 relative overflow-hidden'>
                     <h2 className='md:text-5xl md:w-auto w-full text-3xl font-semibold'>Next-gen enterprise</h2>
@@ -17,7 +21,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </FadeElement>
-        </div>
+        </div >
     )
 }
 
