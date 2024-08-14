@@ -50,7 +50,7 @@ export function FadeText({
     <motion.div
       initial="hidden"
       animate="show"
-      viewport={{ once: true }}
+      viewport={{ once: false, amount: "all", margin: ' 0.5' }}
       variants={FADE_ANIMATION_VARIANTS}
     >
       <motion.span className={className}>{text}</motion.span>
@@ -100,19 +100,15 @@ export function FadeElement({
 
     };
   }, [directionOffset, axis, framerProps]);
-  const staggerVariants = {
-    animate: {
-      transition: {
-        staggerChildren: 0.1, // Adjust stagger delay here
-      },
-    },
-  };
+
   return (
     <motion.div
       initial="hidden"
       animate="show"
       viewport={{ once: true }}
       variants={FADE_ANIMATION_VARIANTS}
+      className={className}
+
     >
       {React.Children.map(children, (child, index) => (
         <motion.span
