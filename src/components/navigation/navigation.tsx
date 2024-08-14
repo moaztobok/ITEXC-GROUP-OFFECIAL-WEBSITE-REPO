@@ -19,10 +19,10 @@ const Navigation = () => {
         };
     }, []);
     return (
-        <div className={cn('fixed top-0 left-0 w-full h-fit z-30 transition-all duration-300', isScrolled ? 'bg-white/90 backdrop-blur-3xl' : 'bg-transparent')}>
+        <div className={cn('fixed top-0 left-0 w-full h-fit z-30 transition-all duration-500', isScrolled ? 'bg-black/75 backdrop-blur-3xl' : 'bg-transparent')}>
             <div className='wrapper py-3  flex justify-between items-center'>
-                <Icon icon={isScrolled ? '#1F00FF' : 'white'} wordmark={isScrolled ? 'black' : 'white'} />
-                <div className={cn('gap-6 items-center hidden md:flex text-white ', isScrolled ? 'text-foreground' : 'text-white')}>
+                <Icon icon={isScrolled ? '#1F00FF' : 'white'} wordmark={isScrolled ? 'white' : 'white'} />
+                <div className={cn('gap-6 items-center hidden md:flex text-white ', isScrolled ? 'text-white' : '')}>
                     <Link href='/services'>
                         Services</Link>
                     <Link href='/units'>
