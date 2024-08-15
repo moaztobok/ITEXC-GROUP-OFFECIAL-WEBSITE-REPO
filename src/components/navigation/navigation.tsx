@@ -27,7 +27,7 @@ const Navigation = () => {
         isScrolled ? "bg-black/75 backdrop-blur-3xl" : "bg-transparent"
       )}
     >
-      <div className="wrapper py-3  flex justify-between items-center">
+      <div className="wrapper py-3 my-0 flex justify-between items-center">
         <Icon
           icon={isScrolled || isHover ? "#1F00FF" : "white"}
           wordmark={isScrolled ? "white" : "white"}
