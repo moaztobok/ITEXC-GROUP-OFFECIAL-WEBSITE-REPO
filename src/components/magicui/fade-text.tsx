@@ -73,7 +73,7 @@ export function FadeElement({
   children
 }: FadeElementProps) {
   const trigger = useRef(null);
-  const isInView = useInView(trigger, { once: true, amount: 0.5 });
+  const isInView = useInView(trigger, { once: true, amount: 0.8 });
   const directionOffset = useMemo(() => {
     const map = { up: 10, down: -10, left: -10, right: 10 };
     return map[direction];
@@ -100,7 +100,6 @@ export function FadeElement({
       }
     };
   }, [directionOffset, axis, framerProps]);
-  console.log(isInView);
   return (
     <motion.div
       ref={trigger}
