@@ -5,14 +5,14 @@ import { FadeElement } from "../magicui/fade-text";
 
 const Services = () => {
   return (
-    <div className="w-full min-h-[80vh] flex items-center  bg-primary text-background ">
+    <div className="w-full min-h-[80vh] flex items-center  bg-foreground text-background ">
       <FadeElement className="w-full h-full" direction="left">
         <div className="wrapper gap-4 flex flex-col">
           <h2 className="text-4xl font-semibold">How we can help you</h2>
           <ServicesAccordion />
           <CustomButton
             label="View all services"
-            className="text-lg bg-white text-primary w-fit mt-8 hover:bg-white/90 font-semibold"
+            className="text-lg bg-white text-foreground w-fit mt-8 hover:bg-white/95 font-semibold"
           />
         </div>
       </FadeElement>

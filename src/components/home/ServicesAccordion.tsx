@@ -67,7 +67,7 @@ const ServicesAccordion = () => {
             {service.description}
             <CustomButton
               label={<ArrowRight className="text-xs" width={16} />}
-              className="text-sm p-1 aspect-square w-fit h-fit bg-white text-primary rounded-full hover:bg-white/90 font-semibold"
+              className="text-sm p-1 aspect-square  w-fit h-fit bg-white text-foreground rounded-full hover:bg-white/90 font-semibold"
             />
           </AccordionContent>
         </AccordionItem>
