@@ -5,7 +5,6 @@ import React, { useEffect, useRef } from "react";
 import { useHover } from "usehooks-ts";
 import { CustomButton } from "../shared/Custom-btn";
 import { Icon } from "./icon";
-
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const hoverRef = useRef(null);
