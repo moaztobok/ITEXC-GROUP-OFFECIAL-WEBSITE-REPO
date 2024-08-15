@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   scroll-behavior: smooth;
 }
 @layer base {
@@ -13,7 +13,7 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 247 100% 50%; 
+    --primary: 247 100% 50%;
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -74,6 +74,6 @@
   }
 }
 
-.spline-watermark{
+.spline-watermark {
   @apply hidden md:block absolute top-0 right-0 p-4 text-xs text-muted;
 }

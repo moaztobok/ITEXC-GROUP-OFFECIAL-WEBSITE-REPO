@@ -1,7 +1,7 @@
 "use client";
 
+import { motion, useInView, Variants } from "framer-motion";
 import React, { useMemo, useRef } from "react";
-import { motion, stagger, useInView, Variants } from "framer-motion";
 
 type FadeTextProps = {
   className?: string;
@@ -15,11 +15,10 @@ export function FadeText({
   className,
   framerProps = {
     hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { type: "spring" } },
+    show: { opacity: 1, transition: { type: "spring" } }
   },
-  text,
+  text
 }: FadeTextProps) {
-
   const directionOffset = useMemo(() => {
     const map = { up: 10, down: -10, left: -10, right: 10 };
     return map[direction];
@@ -37,13 +36,13 @@ export function FadeText({
       hidden: {
         ...(hidden ?? {}),
         opacity: hidden?.opacity ?? 0,
-        [axis]: hidden?.[axis] ?? directionOffset,
+        [axis]: hidden?.[axis] ?? directionOffset
       },
       show: {
         ...(show ?? {}),
         opacity: show?.opacity ?? 1,
-        [axis]: show?.[axis] ?? 0,
-      },
+        [axis]: show?.[axis] ?? 0
+      }
     };
   }, [directionOffset, axis, framerProps]);
 
@@ -51,7 +50,7 @@ export function FadeText({
     <motion.div
       initial="hidden"
       animate="show"
-      viewport={{ once: false, amount: "all", margin: ' 0.5' }}
+      viewport={{ once: false, amount: "all", margin: " 0.5" }}
       variants={FADE_ANIMATION_VARIANTS}
     >
       <motion.span className={className}>{text}</motion.span>
@@ -64,15 +63,15 @@ type FadeElementProps = {
   className?: string;
   direction?: "up" | "down" | "left" | "right";
   framerProps?: Variants;
-}
+};
 export function FadeElement({
   direction = "up",
   className,
   framerProps = {
     hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { type: "spring" } },
+    show: { opacity: 1, transition: { type: "spring" } }
   },
-  children,
+  children
 }: FadeElementProps) {
   const trigger = useRef(null);
   const isInView = useInView(trigger, { once: true, amount: 0.5 });
@@ -93,34 +92,29 @@ export function FadeElement({
       hidden: {
         ...(hidden ?? {}),
         opacity: hidden?.opacity ?? 0,
-        [axis]: hidden?.[axis] ?? directionOffset,
+        [axis]: hidden?.[axis] ?? directionOffset
       },
       show: {
         ...(show ?? {}),
         opacity: show?.opacity ?? 1,
-        [axis]: show?.[axis] ?? 0,
-      },
-
+        [axis]: show?.[axis] ?? 0
+      }
     };
   }, [directionOffset, axis, framerProps]);
-  console.log(isInView)
+  console.log(isInView);
   return (
-
     <motion.div
       ref={trigger}
       initial="hidden"
       animate={isInView ? "show" : ""}
       variants={FADE_ANIMATION_VARIANTS}
       className={className}
-
     >
       {React.Children.map(children, (child, index) => (
-        <motion.span
-          key={index}
-          className={className}
-        >
+        <motion.span key={index} className={className}>
           {child}
         </motion.span>
-      ))}    </motion.div>
+      ))}{" "}
+    </motion.div>
   );
 }
