@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useMemo } from "react";
-import { motion, stagger, Variants } from "framer-motion";
+import React, { useMemo, useRef } from "react";
+import { motion, stagger, useInView, Variants } from "framer-motion";
 
 type FadeTextProps = {
   className?: string;
@@ -19,6 +19,7 @@ export function FadeText({
   },
   text,
 }: FadeTextProps) {
+
   const directionOffset = useMemo(() => {
     const map = { up: 10, down: -10, left: -10, right: 10 };
     return map[direction];
@@ -73,6 +74,8 @@ export function FadeElement({
   },
   children,
 }: FadeElementProps) {
+  const trigger = useRef(null);
+  const isInView = useInView(trigger, { once: true, amount: 0.5 });
   const directionOffset = useMemo(() => {
     const map = { up: 10, down: -10, left: -10, right: 10 };
     return map[direction];
@@ -100,12 +103,13 @@ export function FadeElement({
 
     };
   }, [directionOffset, axis, framerProps]);
-
+  console.log(isInView)
   return (
+
     <motion.div
+      ref={trigger}
       initial="hidden"
-      animate="show"
-      viewport={{ once: true }}
+      animate={isInView ? "show" : ""}
       variants={FADE_ANIMATION_VARIANTS}
       className={className}
 
