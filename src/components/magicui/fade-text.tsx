@@ -15,9 +15,9 @@ export function FadeText({
   className,
   framerProps = {
     hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { type: "spring" } },
+    show: { opacity: 1, transition: { type: "spring" } }
   },
-  text,
+  text
 }: FadeTextProps) {
   const directionOffset = useMemo(() => {
     const map = { up: 10, down: -10, left: -10, right: 10 };
@@ -36,13 +36,13 @@ export function FadeText({
       hidden: {
         ...(hidden ?? {}),
         opacity: hidden?.opacity ?? 0,
-        [axis]: hidden?.[axis] ?? directionOffset,
+        [axis]: hidden?.[axis] ?? directionOffset
       },
       show: {
         ...(show ?? {}),
         opacity: show?.opacity ?? 1,
-        [axis]: show?.[axis] ?? 0,
-      },
+        [axis]: show?.[axis] ?? 0
+      }
     };
   }, [directionOffset, axis, framerProps]);
 
@@ -69,9 +69,9 @@ export function FadeElement({
   className,
   framerProps = {
     hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { type: "spring" } },
+    show: { opacity: 1, transition: { type: "spring" } }
   },
-  children,
+  children
 }: FadeElementProps) {
   const trigger = useRef(null);
   const isInView = useInView(trigger, { once: true, amount: 0.5 });
@@ -92,13 +92,13 @@ export function FadeElement({
       hidden: {
         ...(hidden ?? {}),
         opacity: hidden?.opacity ?? 0,
-        [axis]: hidden?.[axis] ?? directionOffset,
+        [axis]: hidden?.[axis] ?? directionOffset
       },
       show: {
         ...(show ?? {}),
         opacity: show?.opacity ?? 1,
-        [axis]: show?.[axis] ?? 0,
-      },
+        [axis]: show?.[axis] ?? 0
+      }
     };
   }, [directionOffset, axis, framerProps]);
   console.log(isInView);

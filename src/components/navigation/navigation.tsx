@@ -25,7 +25,7 @@ const Navigation = () => {
     <div
       className={cn(
         "fixed top-0 left-0 w-full h-fit z-30 transition-all duration-500",
-        isScrolled ? "bg-black/75 backdrop-blur-3xl" : "bg-transparent",
+        isScrolled ? "bg-black/75 backdrop-blur-3xl" : "bg-transparent"
       )}
     >
       <div className="wrapper py-3  flex justify-between items-center">
@@ -36,7 +36,7 @@ const Navigation = () => {
         <div
           className={cn(
             "gap-6 items-center hidden md:flex text-white ",
-            isScrolled ? "text-white" : "",
+            isScrolled ? "text-white" : ""
           )}
         >
           <Link href="/services">Services</Link>

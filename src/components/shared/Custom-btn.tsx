@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 export const CustomButton = ({
   label,
   className,
-  onClick,
+  onClick
 }: {
   label: string | ReactNode;
   className?: string;

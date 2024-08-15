@@ -1,6 +1,6 @@
 export const Icon = ({
   icon,
-  wordmark,
+  wordmark
 }: {
   icon: string;
   wordmark: string;
