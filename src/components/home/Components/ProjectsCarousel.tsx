@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const ProjectsCarousel = ({ data }: { data: CarouselData[] }) => {
   return (
-    <Carousel className="max-w-[100vw] mt-10">
+    <Carousel className="max-w-[100vw] md:mt-10">
       <CarouselContent className="gap-6 max-w-[100vw] md:mx-52 lg:mx-96 my-auto ">
         {data.map((project) => (
           <CarouselItem key={project.id} className="md:max-w-xl pl-7">

@@ -12,7 +12,7 @@ const Projects = () => {
         <div className="flex flex-col">
           <h2 className="wrapper my-0 text-4xl font-bold">Latest Projects </h2>
           <ProjectsCarousel data={carouselData} />
-          <div className="wrapper my-0 md:px-8 md:items-center gap-4 mt-10 flex-col md:flex-row items-start  font-bold flex md:justify-between">
+          <div className="wrapper my-0 md:px-8 md:items-center gap-4 md:mt-10 flex-col md:flex-row items-start  font-bold flex md:justify-between">
             <Link
               href="/projects"
               className="flex items-center gap-4 hover:opacity-80"
