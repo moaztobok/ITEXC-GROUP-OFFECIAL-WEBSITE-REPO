@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import GridPattern from "@/components/magicui/animated-grid-pattern";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 
 const TdGraphics = () => {
@@ -25,14 +25,7 @@ const TdGraphics = () => {
           height="120%"
         ></iframe>
       ) : (
-        <Image
-          width={1920}
-          height={1080}
-          src="/images/background.jpg"
-          objectFit="cover"
-          alt="bg-graphics"
-          className="absolute h-full w-full object-cover"
-        />
+        <GridPattern className="opacity-25" />
       )}
     </>
   );
