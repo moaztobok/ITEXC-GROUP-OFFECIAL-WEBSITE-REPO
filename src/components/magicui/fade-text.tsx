@@ -76,7 +76,10 @@ export function FadeElement({
   const matches = useMediaQuery("(min-width: 768px)");
 
   const trigger = useRef(null);
-  const isInView = useInView(trigger, { once: false, amount: matches ? 0.3 : 0.1 });
+  const isInView = useInView(trigger, {
+    once: false,
+    amount: matches ? 0.3 : 0.1
+  });
   const directionOffset = useMemo(() => {
     const map = { up: 10, down: -10, left: -10, right: 10 };
     return map[direction];
