@@ -59,9 +59,9 @@ export function GridPattern({
       currentSquares.map((sq) =>
         sq.id === id
           ? {
-            ...sq,
-            pos: getPos()
-          }
+              ...sq,
+              pos: getPos()
+            }
           : sq
       )
     );
