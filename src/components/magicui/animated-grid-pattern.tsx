@@ -28,7 +28,7 @@ export function GridPattern({
   className,
   maxOpacity = 0.5,
   duration = 4,
-  //eslint-disable-next-line 
+  //eslint-disable-next-line
   repeatDelay = 0.5,
   ...props
 }: GridPatternProps) {
@@ -45,7 +45,7 @@ export function GridPattern({
   }
 
   // Adjust the generateSquares function to return objects with an id, x, and y
-  //eslint-disable-next-line 
+  //eslint-disable-next-line
   function generateSquares(count: number) {
     return Array.from({ length: count }, (_, i) => ({
       id: i,
@@ -59,9 +59,9 @@ export function GridPattern({
       currentSquares.map((sq) =>
         sq.id === id
           ? {
-            ...sq,
-            pos: getPos()
-          }
+              ...sq,
+              pos: getPos()
+            }
           : sq
       )
     );
