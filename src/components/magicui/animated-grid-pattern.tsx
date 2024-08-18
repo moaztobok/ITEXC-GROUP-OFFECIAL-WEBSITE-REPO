@@ -71,10 +71,13 @@ export function GridPattern({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (dimensions.width && dimensions.height) {
-      //--eslint-disable-next-line
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       setSquares(generateSquares(numSquares));
     }
-  }, [dimensions, numSquares]);
+  },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
+    [dimensions, numSquares]);
 
   // Resize observer to update container dimensions
   useEffect(() => {
