@@ -1,6 +1,6 @@
 import { FadeElement } from "../magicui/fade-text";
 import { CustomButton } from "../shared/Custom-btn";
-import TdGraphics from "./TdGraphics";
+import TdGraphics from "./Components/TdGraphics";
 
 const HeroSection = () => {
   return (

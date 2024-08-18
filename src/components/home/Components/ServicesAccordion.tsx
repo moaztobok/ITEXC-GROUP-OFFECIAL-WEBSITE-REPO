@@ -1,12 +1,12 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { CustomButton } from "../shared/Custom-btn";
+import { CustomButton } from "../../shared/Custom-btn";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger
-} from "../ui/accordion";
+} from "../../ui/accordion";
 
 const services = [
   {
