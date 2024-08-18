@@ -11,7 +11,6 @@ const Navigation = () => {
   const isHover = useHover(hoverRef);
   useEffect(() => {
     const handleScroll = () => {
-
       setIsScrolled(window.scrollY > 0);
     };
 
