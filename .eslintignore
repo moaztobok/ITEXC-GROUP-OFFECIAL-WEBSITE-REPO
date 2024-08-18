@@ -1,0 +1,4 @@
+# .eslintignore
+node_modules
+./src/components/ui
+./src/components/magicui

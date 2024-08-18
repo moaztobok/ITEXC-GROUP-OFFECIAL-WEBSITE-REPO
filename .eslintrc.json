@@ -4,5 +4,8 @@
   "plugins": ["unused-imports"],
   "globals": {
     "JSX": "readonly"
+  },
+  "rules":{
+    "react-hooks/exhaustive-deps": "off"
   }
 }

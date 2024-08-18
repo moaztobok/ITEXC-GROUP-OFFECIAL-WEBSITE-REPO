@@ -70,10 +70,7 @@ export function GridPattern({
   // Update squares to animate in
   useEffect(() => {
     if (dimensions.width && dimensions.height) {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      setSquares(
-        generateSquares(numSquares)
-      );
+      setSquares(generateSquares(numSquares));
     }
   }, [dimensions, numSquares]);
 
