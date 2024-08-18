@@ -13,7 +13,10 @@ export const CustomButton = ({
   return (
     <Button
       onClick={onClick}
-      className={cn("rounded-none py-6 px-8", className)}
+      className={cn(
+        "rounded-none py-6 px-8 hover:scale-105 transition-all duration-500",
+        className
+      )}
     >
       {label}
     </Button>
