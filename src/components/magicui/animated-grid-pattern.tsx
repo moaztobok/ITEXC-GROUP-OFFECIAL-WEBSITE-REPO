@@ -68,6 +68,7 @@ export function GridPattern({
   };
 
   // Update squares to animate in
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (dimensions.width && dimensions.height) {
       //--eslint-disable-next-line
