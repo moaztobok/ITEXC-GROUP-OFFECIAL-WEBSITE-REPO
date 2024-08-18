@@ -68,11 +68,11 @@ export function GridPattern({
   };
 
   // Update squares to animate in
-  //--eslint-disable-next-line
   useEffect(() => {
     if (dimensions.width && dimensions.height) {
       setSquares(generateSquares(numSquares));
     }
+    //--eslint-disable-next-line
   }, [dimensions, numSquares]);
 
   // Resize observer to update container dimensions
