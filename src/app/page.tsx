@@ -1,3 +1,4 @@
+import ItexcAcaddmy from "@/components/home/ItexcAcaddmy";
 import Customers from "@/components/home/Customers";
 import Engineering from "@/components/home/Engineering";
 import HeroSection from "@/components/home/HeroSection";
@@ -13,8 +14,8 @@ export default function Home() {
       <Engineering />
       <Projects />
       <Customers />
+      <ItexcAcaddmy />
       <PlaceHolder />
-
     </>
   );
 }
