@@ -10,7 +10,6 @@ const config = {
   ],
   prefix: "",
   theme: {
-
     container: {
       center: true,
       padding: "2rem",
@@ -20,8 +19,7 @@ const config = {
     },
     extend: {
       transitionDuration: {
-        '10000': '10000ms',
-
+        "10000": "10000ms"
       },
       colors: {
         border: "hsl(var(--border))",
