@@ -72,8 +72,11 @@
   .wrapper {
     @apply mx-auto w-full max-w-xl px-4 py-6 md:max-w-3xl lg:max-w-[1440px] lg:py-10 my-20 md:my-32;
   }
+  .spline-watermark {
+    @apply hidden md:block absolute top-0 right-0 p-4 text-xs text-muted;
+  }
+  .Title {
+    @apply md:text-4xl text-3xl font-bold md:max-w-[50%]
+  }
 }
 
-.spline-watermark {
-  @apply hidden md:block absolute top-0 right-0 p-4 text-xs text-muted;
-}

@@ -1,6 +1,7 @@
 import React from "react";
 import { CustomButton } from "../shared/Custom-btn";
 import { FadeElement } from "../magicui/fade-text";
+import HighlightedText from "./Components/HighlightedText";
 
 const Engineering = () => {
   return (
@@ -9,8 +10,8 @@ const Engineering = () => {
         <FadeElement>
           <div className="flex flex-col gap-6">
             <span className="font-semibold">Our core</span>
-            <h2 className="justify-start text-4xl font-bold">
-              Software Development is Where we excel{" "}
+            <h2 className="Title max-w-full">
+              <HighlightedText> Software Development </HighlightedText>is Where we excel{" "}
             </h2>
             <p>
               Where innovation meets code. We excel in crafting bespoke software
