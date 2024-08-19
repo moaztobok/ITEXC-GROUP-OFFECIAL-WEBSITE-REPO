@@ -4,7 +4,7 @@ import AcademyGraphics from "./Components/AcademyGraphics";
 
 const ItexcAcaddmy = () => {
   return (
-    <section className="min-h-screen grid items-center relative overflow-hidden">
+    <section className="min-h-screen bg-muted grid items-center relative overflow-hidden">
       <FadeElement>
         <div className="wrapper flex flex-col md:flex-row  gap-8">
           <div className="flex flex-col justify-center md:flex-[0.5] gap-6">

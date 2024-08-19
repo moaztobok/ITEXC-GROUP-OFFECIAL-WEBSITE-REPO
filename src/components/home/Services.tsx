@@ -11,9 +11,9 @@ const Services = () => {
         <div className="wrapper gap-4 flex flex-col">
           <GradualSpacing
             text="How we can help you"
-            className="justify-start hidden md:block text-4xl font-semibold"
+            className="justify-start hidden md:block Title"
           ></GradualSpacing>
-          <h2 className="justify-start block md:hidden text-4xl font-semibold">
+          <h2 className="justify-start block md:hidden Title">
             How we can help you
           </h2>
           <ServicesAccordion />
