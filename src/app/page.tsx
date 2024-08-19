@@ -1,3 +1,4 @@
+import Customers from "@/components/home/Customers";
 import Engineering from "@/components/home/Engineering";
 import HeroSection from "@/components/home/HeroSection";
 import Projects from "@/components/home/Projects";
@@ -11,7 +12,9 @@ export default function Home() {
       <Services />
       <Engineering />
       <Projects />
+      <Customers />
       <PlaceHolder />
+
     </>
   );
 }

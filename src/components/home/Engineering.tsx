@@ -5,9 +5,9 @@ import { FadeElement } from "../magicui/fade-text";
 const Engineering = () => {
   return (
     <section className="w-full bg-background grid items-center">
-      <div className="wrapper flex gap-8 flex-col md:flex-row">
+      <div className="wrapper flex gap-16 flex-col md:flex-row">
         <FadeElement>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6">
             <span className="font-semibold">Our core</span>
             <h2 className="justify-start text-4xl font-bold">
               Software Development is Where we excel{" "}
@@ -30,7 +30,7 @@ const Engineering = () => {
           </div>
         </FadeElement>
 
-        <div className="flex flex-col md:flex-row items-center gap-8 my-10">
+        <div className="flex flex-col md:flex-row items-center gap-10 my-10">
           <FadeElement direction="up">
             <div className="flex flex-col">
               <p className="text-2xl font-semibold">Web development</p>

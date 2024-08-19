@@ -5,3 +5,9 @@ export type CarouselData = {
   image: string;
   url: string;
 };
+export type CustomerCard = {
+  title: string;
+  description: string;
+  url: string;
+  image: string;
+}

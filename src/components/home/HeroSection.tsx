@@ -4,7 +4,7 @@ import TdGraphics from "./Components/TdGraphics";
 
 const HeroSection = () => {
   return (
-    <div className="h-screen bg-foreground grid items-center text-background relative overflow-hidden">
+    <section className="h-screen bg-foreground grid items-center text-background relative overflow-hidden">
       <TdGraphics />
       <FadeElement>
         <div className="wrapper flex flex-col md:justify-center items-center md:gap-2 relative overflow-hidden">
@@ -18,19 +18,19 @@ const HeroSection = () => {
             Empowering businesses with cutting-edge software development,
             design, and system integration
           </p>
-          <div className="mt-10 flex font-normal w-full md:w-auto gap-4">
+          <div className="mt-10 flex  font-normal w-full md:w-auto gap-4  flex-wrap">
             <CustomButton
               label="Get started"
-              className="text-lg border border-primary"
+              className="text-lg border border-primary flex-1"
             />
             <CustomButton
               label="How it works"
-              className="text-lg text-foreground bg-transparent outline-2 hover:bg-white/20 outline-white text-white border"
+              className="text-lg text-foreground bg-transparent flex-1 outline-2 hover:bg-white/20 outline-white text-white border"
             />
           </div>
         </div>
       </FadeElement>
-    </div>
+    </section>
   );
 };
 
