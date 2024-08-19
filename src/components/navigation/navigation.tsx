@@ -28,7 +28,7 @@ const Navigation = () => {
       )}
     >
       <div className="wrapper py-3 my-0 flex justify-between items-center">
-        <Link href='/'>
+        <Link href="/">
           <Icon
             icon={isScrolled || isHover ? "#1F00FF" : "white"}
             wordmark={isScrolled ? "white" : "white"}
