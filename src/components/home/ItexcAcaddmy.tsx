@@ -6,12 +6,10 @@ const ItexcAcaddmy = () => {
   return (
     <section className="min-h-screen grid items-center relative overflow-hidden">
       <FadeElement>
-        <div className="wrapper flex flex-col-reverse md:flex-row ">
+        <div className="wrapper flex flex-col md:flex-row  gap-8">
           <div className="flex flex-col justify-center md:flex-[0.5] gap-6">
             <span className="font-semibold ">Our incubator</span>
-            <h2 className="justify-start text-4xl font-bold md:max-w-[50%]">
-              ITEXC ACADEMY
-            </h2>
+            <h2 className="Title">ITEXC ACADEMY</h2>
             <p>
               itexc Academy is your gateway to a successful career in
               technology. We offer industry-leading courses taught by seasoned
@@ -32,9 +30,7 @@ const ItexcAcaddmy = () => {
               </FadeElement>
               <FadeElement direction="up">
                 <div className="flex flex-col gap-4">
-                  <p className="text-2xl font-semibold">
-                    Graduate and get certified
-                  </p>
+                  <p className="text-2xl font-semibold">Get certified</p>
                   <p>
                     Get certified by professionals to prove yourself and show
                     your skills in your field

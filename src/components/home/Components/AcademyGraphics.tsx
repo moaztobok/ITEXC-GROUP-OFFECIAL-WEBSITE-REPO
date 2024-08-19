@@ -4,7 +4,7 @@ import React from "react";
 
 const AcademyGraphics = () => {
   return (
-    <FadeElement className="w-full md:flex-[0.5] mb-10 md:mb-0">
+    <FadeElement className="w-full md:flex-[0.5] p-10 md:mb-0">
       <div className=" w-full relative flex items-center justify-center select-none aspect-square">
         <Image
           src="./images/Emblem-circle.svg"
