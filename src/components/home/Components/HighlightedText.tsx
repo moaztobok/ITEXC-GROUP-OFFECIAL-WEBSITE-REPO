@@ -1,11 +1,7 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from "react";
 
 const HighlightedText = ({ children }: { children: ReactNode }) => {
-    return (
-        <span className='text-primary'>
-            {children}
-        </span>
-    )
-}
+  return <span className="text-primary">{children}</span>;
+};
 
-export default HighlightedText
+export default HighlightedText;

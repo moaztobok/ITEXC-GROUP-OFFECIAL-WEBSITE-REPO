@@ -11,7 +11,8 @@ const Engineering = () => {
           <div className="flex flex-col gap-6">
             <span className="font-semibold">Our core</span>
             <h2 className="Title max-w-full">
-              <HighlightedText> Software Development </HighlightedText>is Where we excel{" "}
+              <HighlightedText> Software Development </HighlightedText>is Where
+              we excel{" "}
             </h2>
             <p>
               Where innovation meets code. We excel in crafting bespoke software

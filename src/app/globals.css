@@ -76,7 +76,6 @@
     @apply hidden md:block absolute top-0 right-0 p-4 text-xs text-muted;
   }
   .Title {
-    @apply md:text-4xl text-3xl font-bold md:max-w-[50%]
+    @apply md:text-4xl text-3xl font-bold md:max-w-[50%];
   }
 }
-

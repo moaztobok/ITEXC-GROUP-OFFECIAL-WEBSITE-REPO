@@ -11,7 +11,8 @@ const Customers = () => {
         <div className="flex flex-col wrapper gap-6">
           <span className="font-semibold">Our Customers</span>
           <h2 className="Title">
-            <HighlightedText>Transforming Businesses </HighlightedText>Through Innovative Solutions
+            <HighlightedText>Transforming Businesses </HighlightedText>Through
+            Innovative Solutions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {customerData.map((data, index) => (
