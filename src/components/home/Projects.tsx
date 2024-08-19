@@ -11,12 +11,12 @@ const Projects = () => {
     <section className="min-h-screen bg-muted w-full py-10 grid items-center overflow-hidden">
       <FadeElement>
         <div className="flex flex-col gap-6">
-          <span className="wrapper py-0 my-0 font-semibold">
-            Our Case studies
-          </span>
-          <h2 className="wrapper Title my-0 py-0">
-            <HighlightedText>Latest Projects</HighlightedText>
-          </h2>
+          <div className="wrapper flex flex-col gap-6 py-0 my-0">
+            <span className="font-semibold">Our Case studies</span>
+            <h2 className="Title my-0 py-0">
+              <HighlightedText>Latest Projects</HighlightedText>
+            </h2>
+          </div>
           <ProjectsCarousel data={carouselData} />
           <div className="wrapper my-0 md:px-8 md:items-center gap-4 md:mt-10 flex-col md:flex-row items-start  font-bold flex md:justify-between">
             <Link

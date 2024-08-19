@@ -7,8 +7,8 @@ import HighlightedText from "./Components/HighlightedText";
 const Customers = () => {
   return (
     <section className="min-h-screen grid items-center relative overflow-hidden">
-      <div className="flex flex-col wrapper gap-6">
-        <FadeElement>
+      <FadeElement>
+        <div className="flex flex-col wrapper gap-6">
           <span className="font-semibold">Our Customers</span>
           <h2 className="Title">
             <HighlightedText>Transforming Businesses </HighlightedText>Through
@@ -26,8 +26,8 @@ const Customers = () => {
               </FadeElement>
             ))}
           </div>
-        </FadeElement>
-      </div>
+        </div>
+      </FadeElement>
     </section>
   );
 };
