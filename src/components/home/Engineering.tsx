@@ -32,7 +32,7 @@ const Engineering = () => {
 
         <div className="flex flex-col md:flex-row items-center gap-10 my-10">
           <FadeElement direction="up">
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-4">
               <p className="text-2xl font-semibold">Web development</p>
               <p>
                 From responsive websites to complex web apps, we craft tailored
@@ -41,7 +41,7 @@ const Engineering = () => {
             </div>
           </FadeElement>
           <FadeElement direction="up">
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-4">
               <p className="text-2xl font-semibold">Mobile development</p>
               <p>
                 Intuitive, powerful apps for iOS and Android. We bring your
