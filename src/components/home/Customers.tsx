@@ -22,6 +22,7 @@ const Customers = () => {
                   description={data.description}
                   image={data.image}
                   url={data.url}
+                  serviceUrl={data.serviceUrl}
                 />
               </FadeElement>
             ))}

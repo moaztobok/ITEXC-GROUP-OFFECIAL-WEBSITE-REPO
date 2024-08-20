@@ -10,4 +10,5 @@ export type CustomerCard = {
   description: string;
   url: string;
   image: string;
+  serviceUrl: string;
 };

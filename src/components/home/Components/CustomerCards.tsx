@@ -8,15 +8,17 @@ const CustomerCards = ({
   title,
   description,
   url,
+  serviceUrl,
   image
 }: {
   title: string;
   description: string;
   url: string;
+  serviceUrl: string;
   image: string;
 }) => {
   return (
-    <Card className="border-none flex w-full flex-col gap-4 shadow-none">
+    <Card className="border-none flex w-full h-full flex-col gap-4 shadow-none">
       <div className=" w-full relative">
         <Image
           width={600}
@@ -26,9 +28,9 @@ const CustomerCards = ({
           className="w-full object-cover aspect-[5/3]  top-0 left-0"
         />
       </div>
-      <span className="text-lg font-semibold">{title}</span>
+      <Link href={serviceUrl} className="text-lg font-semibold">{title}</Link>
       <span className="text-muted-foreground">{description}</span>
-      <Link href={url} className="inline-flex items-center gap-4">
+      <Link href={url} className="inline-flex items-center gap-4 hover:opacity-50 mt-auto">
         {" "}
         Get Quote <ArrowButton className="p-0" />
       </Link>

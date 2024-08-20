@@ -64,7 +64,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border scroll-smooth snap-none;
   }
   body {
     @apply bg-background text-foreground;
