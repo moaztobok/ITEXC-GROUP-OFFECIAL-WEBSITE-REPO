@@ -81,7 +81,7 @@ export function FadeElement({
     amount: matches ? 0.3 : 0.1
   });
   const directionOffset = useMemo(() => {
-    const map = { up: 10, down: -10, left: -10, right: 10 };
+    const map = { up: 20, down: -20, left: -20, right: 20 };
     return map[direction];
   }, [direction]);
 
@@ -97,11 +97,13 @@ export function FadeElement({
       hidden: {
         ...(hidden ?? {}),
         opacity: hidden?.opacity ?? 0,
+        blur: 20,
         [axis]: hidden?.[axis] ?? directionOffset
       },
       show: {
         ...(show ?? {}),
         opacity: show?.opacity ?? 1,
+        blur: 0,
         [axis]: show?.[axis] ?? 0
       }
     };

@@ -1,8 +1,7 @@
-import React from "react";
-import { FadeElement } from "../magicui/fade-text";
 import { customerData } from "@/data/data";
+import { FadeElement } from "../magicui/fade-text";
+import GradualSpacing from "../magicui/gradual-spacing";
 import CustomerCards from "./Components/CustomerCards";
-import HighlightedText from "./Components/HighlightedText";
 
 const Customers = () => {
   return (
@@ -10,10 +9,13 @@ const Customers = () => {
       <FadeElement>
         <div className="flex flex-col wrapper gap-6">
           <span className="font-semibold">Our Customers</span>
-          <h2 className="Title">
-            <HighlightedText>Transforming Businesses </HighlightedText>Through
-            Innovative Solutions
-          </h2>
+          <GradualSpacing
+            text="Solutions for Success"
+            className="justify-start Title"
+          ></GradualSpacing>
+          {/* <h2 className="justify-start block md:hidden Title">
+            Solutions for Success
+          </h2> */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {customerData.map((data, index) => (
               <FadeElement key={index}>
