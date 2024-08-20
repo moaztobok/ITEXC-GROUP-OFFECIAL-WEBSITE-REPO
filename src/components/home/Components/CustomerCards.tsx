@@ -28,9 +28,14 @@ const CustomerCards = ({
           className="w-full object-cover aspect-[5/3]  top-0 left-0"
         />
       </div>
-      <Link href={serviceUrl} className="text-lg font-semibold">{title}</Link>
+      <Link href={serviceUrl} className="text-lg font-semibold hover:underline">
+        {title}
+      </Link>
       <span className="text-muted-foreground">{description}</span>
-      <Link href={url} className="inline-flex items-center gap-4 hover:opacity-50 mt-auto">
+      <Link
+        href={url}
+        className="inline-flex items-center gap-4 hover:opacity-50 mt-auto"
+      >
         {" "}
         Get Quote <ArrowButton className="p-0" />
       </Link>

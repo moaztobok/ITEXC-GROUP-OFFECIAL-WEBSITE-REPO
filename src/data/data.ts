@@ -50,7 +50,7 @@ export const customerData: CustomerCard[] = [
       "We deliver customized ERP systems that integrate your core business processes. Our solutions streamline operations, improve efficiency, and provide real-time insights for informed decision-making across finance, HR, supply chain, and more.",
     url: "/units/erp-solutions",
     image: "/images/erp.png",
-    serviceUrl: '/services/erp'
+    serviceUrl: "/services/erp"
   },
   {
     title: "BRANDING & DESIGN STUDIO",
@@ -58,8 +58,7 @@ export const customerData: CustomerCard[] = [
       "Our creative team develops strong brand identities that resonate with your audience. We create impactful logos, engaging websites, and consistent visual branding to enhance your market presence and drive customer engagement.",
     url: "/units/studio",
     image: "/images/studio.png",
-    serviceUrl: '/services/studio'
-
+    serviceUrl: "/services/studio"
   },
   {
     title: "HR SERVICES",
@@ -67,6 +66,6 @@ export const customerData: CustomerCard[] = [
       "We offer comprehensive HR solutions to simplify workforce management. From recruitment to performance tracking, our user-friendly systems support your HR team in nurturing talent and boosting organizational productivity.",
     url: "/units/hr",
     image: "/images/hr.png",
-    serviceUrl: '/services/hr'
+    serviceUrl: "/services/hr"
   }
 ];

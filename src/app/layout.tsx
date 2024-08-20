@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Itexc group",
-  description: "ITEXC GROUP is a software development company that provides innovative solutions to businesses.",
+  description:
+    "ITEXC GROUP is a software development company that provides innovative solutions to businesses."
 };
 
 export default function RootLayout({
