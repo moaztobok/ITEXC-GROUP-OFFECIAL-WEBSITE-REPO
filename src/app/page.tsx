@@ -17,7 +17,6 @@ export default function Home() {
       <Customers />
       <ItexcAcaddmy />
       <Process />
-      <PlaceHolder />
     </>
   );
 }
