@@ -1,15 +1,22 @@
 import { FadeElement } from "@/components/magicui/fade-text";
 import { CustomButton } from "@/components/shared/Custom-btn";
 import AcademyGraphics from "./Components/AcademyGraphics";
+import GradualSpacing from "../magicui/gradual-spacing";
 
 const ItexcAcaddmy = () => {
   return (
-    <section className="min-h-screen bg-muted grid items-center relative overflow-hidden">
+    <section className="bg-muted relative overflow-hidden">
       <FadeElement>
-        <div className="wrapper flex flex-col md:flex-row  gap-8">
+        <div className=" flex wrapper flex-col md:flex-row  gap-8">
           <div className="flex flex-col justify-center md:flex-[0.5] gap-6">
             <span className="font-semibold ">Our incubator</span>
-            <h2 className="Title">ITEXC ACADEMY</h2>
+            <GradualSpacing
+              text="ITEXC ACADEMY"
+              className="justify-start  Title"
+            ></GradualSpacing>
+            {/* <h2 className="justify-start block md:hidden Title">
+              ITEXC ACADEMY
+            </h2>             */}
             <p>
               itexc Academy is your gateway to a successful career in
               technology. We offer industry-leading courses taught by seasoned

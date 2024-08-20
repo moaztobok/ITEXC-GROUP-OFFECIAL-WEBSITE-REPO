@@ -69,3 +69,31 @@ export const customerData: CustomerCard[] = [
     serviceUrl: "/services/hr"
   }
 ];
+
+export const projectStages = [
+  {
+    image: "/images/process-1.jpg",
+    title: "Understanding the Vision",
+    icon: "megaphone",
+    description: "Engage clients, analyze needs, identify goals and challenges."
+  },
+  {
+    image: "/images/process-2.jpg",
+    title: "Charting the Course",
+    icon: "folder",
+    description: "Develop action plan, set priorities, organize tasks."
+  },
+  {
+    image: "/images/process-3.jpg",
+    title: "Bringing Ideas to Life",
+    icon: "bell",
+    description: "Implement strategy using agile methods, manage changes."
+  },
+  {
+    image: "/images/process-4.jpg",
+    title: "Refining for Excellence",
+    icon: "trophy",
+    description:
+      "Bringing Ideas to Life implement strategy using agile methods, manage changes."
+  }
+];
