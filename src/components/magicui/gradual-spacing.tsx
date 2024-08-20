@@ -24,7 +24,7 @@ export default function GradualSpacing({
   className
 }: GradualSpacingProps) {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: false, amount: 0.8 });
+  const inView = useInView(ref, { once: true, amount: 0.8 });
   return (
     <div className="flex justify-start space-x-0  " ref={ref}>
       <AnimatePresence>

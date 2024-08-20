@@ -14,7 +14,7 @@ const services = [
     icon: "./icons/software-icon.svg",
     title: "Software engineering",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus..",
+      "Our software engineers build custom solutions tailored to your business needs. From web and mobile apps to complex enterprise systems, we deliver high-quality software.",
     url: "/services/software-engineering"
   },
   {
@@ -22,7 +22,7 @@ const services = [
     icon: "./icons/design-icon.svg",
     title: "Design and branding",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus..",
+      "We create stunning designs that capture your brand's essence. Our team specializes in UI/UX, branding, and graphic design. We help you stand out in a crowded market.",
     url: "/services/design-branding"
   },
   {
@@ -30,7 +30,7 @@ const services = [
     icon: "./icons/erp-icon.svg",
     title: "Enterprise resource planning",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus..",
+      "Optimize your operations with our ERP solutions. We implement, customize, and support ERP systems to drive efficiency",
     url: "/services/erp"
   },
   {
@@ -38,7 +38,7 @@ const services = [
     icon: "./icons/hr-icon.svg",
     title: "Human resource services",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus..",
+      "We help you manage your workforce effectively. Our HR services include recruitment, payroll, and HR consulting.",
     url: "/services/hr"
   }
 ];
@@ -53,7 +53,7 @@ const ServicesAccordion = () => {
           className={service.id === "item-4" ? "border-b-0" : ""}
         >
           <AccordionTrigger className="hover:no-underline">
-            <div className="flex gap-4 items-end">
+            <div className="flex items-center gap-4 text-lg md:text-xl ">
               <Image
                 width={32}
                 height={32}
@@ -63,7 +63,7 @@ const ServicesAccordion = () => {
               <span>{service.title}</span>
             </div>
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 md:ps-6">
+          <AccordionContent className="flex flex-col gap-4 md:ps-6 text-lg">
             {service.description}
             <CustomButton
               label={<ArrowRight className="text-xs" width={16} />}
