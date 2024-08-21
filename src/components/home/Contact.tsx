@@ -27,7 +27,7 @@ const Contact = () => {
               reach out.
             </p>
             <div className="flex flex-col mt-10 gap-4">
-              <div className="flex text-xl  gap-4">
+              <div className="grid grid-cols-[24px_auto] text-xl  gap-4">
                 <Hotel size={24} className="mb-auto mt-1" />
                 <p>
                   Subdivision of the commune, Lot N01, Building N02, Dar

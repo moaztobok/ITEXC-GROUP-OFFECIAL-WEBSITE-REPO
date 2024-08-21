@@ -7,7 +7,7 @@ import React from "react";
 
 const SubFooter = () => {
   return (
-    <section className="bg-foreground text-background">
+    <footer className="bg-foreground text-background">
       <FadeElement>
         <div className="flex-col divide-y gap-4 my-0 wrapper">
           <div className="flex flex-col-reverse md:flex-row w-full gap-16 justify-between py-10">
@@ -57,7 +57,7 @@ const SubFooter = () => {
           </div>
         </div>
       </FadeElement>
-    </section>
+    </footer>
   );
 };
 
