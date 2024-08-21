@@ -1,5 +1,52 @@
 import { CarouselData, CustomerCard } from "./types";
-
+export const services = [
+  {
+    title: "Software development",
+    desc: "Custom software solutions",
+    href: "/services/software-development"
+  },
+  {
+    title: "Branding & Design",
+    desc: "Impactful brand identity",
+    href: "/services/branding-and-design"
+  },
+  {
+    title: "Erp Solutions",
+    desc: "Streamline core operations",
+    href: "/services/erp-solutions"
+  },
+  {
+    title: "Hr Managments",
+    desc: "Optimize workforce management",
+    href: "/services/hr-management"
+  }
+];
+export const units = [
+  {
+    title: "Itexc academy",
+    desc: "Develop talent, nurture entrepreneurs.",
+    url: "/units/itexc-academy",
+    imageUrl: "/icons/academy.svg"
+  },
+  {
+    title: "Itexc studio",
+    desc: "Craft digital experiences, impactful branding.",
+    url: "/units/itexc-studio",
+    imageUrl: "/icons/studio.svg"
+  },
+  {
+    title: "Itexc erp",
+    desc: "Streamline core operations with custom ERP.",
+    url: "/units/itexc-erp",
+    imageUrl: "/icons/erp.svg"
+  },
+  {
+    title: "Itexc hr",
+    desc: "Optimize workforce management solutions.",
+    url: "/units/itexc-hr",
+    imageUrl: "/icons/hr.svg"
+  }
+];
 export const carouselData: CarouselData[] = [
   {
     id: "1",

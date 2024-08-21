@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from "react";
 import { useHover } from "usehooks-ts";
 import { CustomButton } from "../shared/Custom-btn";
 import { Icon } from "./icon";
+import { NavigationItems } from "./NavLinks";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const hoverRef = useRef(null);
@@ -40,12 +41,15 @@ const Navigation = () => {
             isScrolled ? "text-white" : ""
           )}
         >
-          <Link href="/services">Services</Link>
+          <NavigationItems />
+
+          <CustomButton label="Contact us" />
+          {/* <Link href="/services">Services</Link>
           <Link href="/units">Our units</Link>
           <Link href="/careers">Careers</Link>
           <Link href="/about-us">About us</Link>
           <Link href="/consulting">Consulting</Link>
-          <CustomButton label="Contact us" />
+          <CustomButton label="Contact us" /> */}
         </div>
       </div>
     </div>
