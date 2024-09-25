@@ -5,13 +5,14 @@ import "./globals.css";
 import Navigation from "@/components/navigation/navigation";
 import Contact from "@/components/home/Contact";
 import Footer from "@/components/home/Footer";
+import LenisScroll from "@/components/home/Components/LenisScroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Itexc group",
+  title: "ITEXC GROUP",
   description:
-    "ITEXC GROUP is a software development company that provides innovative solutions to businesses."
+    "ITEXC GROUP is a digital transformation company that provides innovative solutions to businesses."
 };
 
 export default function RootLayout({
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <LenisScroll />
         <Navigation />
         {children}
         <Contact />

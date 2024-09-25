@@ -33,12 +33,13 @@ const Navigation = () => {
         <Link href="/">
           <Icon
             icon={isScrolled || isHover ? "#1F00FF" : "white"}
-            wordmark={isScrolled ? "white" : "white"}
           />
         </Link>
         <div className={cn("gap-6 items-center hidden md:flex text-white ")}>
           <NavigationItems />
-          <CustomButton label="Contact us" />
+          <Link href='#contact'>
+            <CustomButton label="Contact us" />
+          </Link>
         </div>
         <div className="md:hidden ">
           <SmallScreenNav />

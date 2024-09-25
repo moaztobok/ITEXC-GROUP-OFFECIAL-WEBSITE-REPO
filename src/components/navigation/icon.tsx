@@ -1,9 +1,4 @@
-export const Icon = ({
-  icon,
-
-}: {
-  icon: string;
-}) => {
+export const Icon = ({ icon }: { icon: string }) => {
   return (
     <svg viewBox="0 0 650 230" width="110" xmlns="http://www.w3.org/2000/svg">
       <g

@@ -11,14 +11,14 @@ const ItexcAcaddmy = () => {
           <div className="flex flex-col justify-center md:flex-[0.5] gap-6">
             <span className="font-semibold ">Our incubator</span>
             <GradualSpacing
-              text="ITEXC ACADEMY"
+              text="INCUBYTE"
               className="justify-start  Title"
             ></GradualSpacing>
             {/* <h2 className="justify-start block md:hidden Title">
               ITEXC ACADEMY
             </h2>             */}
             <p>
-              itexc Academy is your gateway to a successful career in
+              INCUBYTE is your gateway to a successful career in
               technology. We offer industry-leading courses taught by seasoned
               professionals, empowering you with the skills to excel in your
               field. Beyond technical expertise, we foster innovation and

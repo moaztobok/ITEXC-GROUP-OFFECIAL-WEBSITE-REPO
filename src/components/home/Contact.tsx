@@ -13,7 +13,7 @@ import { FadeElement } from "../magicui/fade-text";
 
 const Contact = () => {
   return (
-    <section className="bg-muted relative overflow-hidden">
+    <section className="bg-muted relative overflow-hidden" id="contact">
       <FadeElement>
         <div className=" flex wrapper flex-col md:flex-row  gap-8">
           <div className="flex flex-col justify-center md:flex-[0.5] gap-6">
