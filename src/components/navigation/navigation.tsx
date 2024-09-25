@@ -36,12 +36,7 @@ const Navigation = () => {
             wordmark={isScrolled ? "white" : "white"}
           />
         </Link>
-        <div
-          className={cn(
-            "gap-6 items-center hidden md:flex text-white ",
-            isScrolled ? "text-white" : ""
-          )}
-        >
+        <div className={cn("gap-6 items-center hidden md:flex text-white ")}>
           <NavigationItems />
           <CustomButton label="Contact us" />
         </div>
