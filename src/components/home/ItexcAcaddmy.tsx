@@ -18,12 +18,12 @@ const ItexcAcaddmy = () => {
               ITEXC ACADEMY
             </h2>             */}
             <p>
-              INCUBYTE is your gateway to a successful career in
-              technology. We offer industry-leading courses taught by seasoned
-              professionals, empowering you with the skills to excel in your
-              field. Beyond technical expertise, we foster innovation and
-              entrepreneurship, providing the support you need to launch your
-              own tech venture. Join us in shaping the future of technology.
+              INCUBYTE is your gateway to a successful career in technology. We
+              offer industry-leading courses taught by seasoned professionals,
+              empowering you with the skills to excel in your field. Beyond
+              technical expertise, we foster innovation and entrepreneurship,
+              providing the support you need to launch your own tech venture.
+              Join us in shaping the future of technology.
             </p>
             <div className="flex flex-col md:flex-row items-center gap-10 my-10">
               <FadeElement direction="up">

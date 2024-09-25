@@ -31,13 +31,11 @@ const Navigation = () => {
     >
       <div className="wrapper py-3 my-0 flex justify-between items-center">
         <Link href="/">
-          <Icon
-            icon={isScrolled || isHover ? "#1F00FF" : "white"}
-          />
+          <Icon icon={isScrolled || isHover ? "#1F00FF" : "white"} />
         </Link>
         <div className={cn("gap-6 items-center hidden md:flex text-white ")}>
           <NavigationItems />
-          <Link href='#contact'>
+          <Link href="#contact">
             <CustomButton label="Contact us" />
           </Link>
         </div>
