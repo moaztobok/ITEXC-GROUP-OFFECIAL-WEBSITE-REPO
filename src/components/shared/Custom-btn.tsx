@@ -3,7 +3,7 @@ import React from "react";
 import { Button, ButtonProps } from "../ui/button";
 
 export interface CustomButtonProps extends ButtonProps {
-  label: string;
+  label: React.ReactNode;
 }
 
 export const CustomButton = React.forwardRef<
