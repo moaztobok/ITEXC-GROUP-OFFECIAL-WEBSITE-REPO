@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import { CustomButton } from "../../shared/Custom-btn";
 import {
@@ -66,7 +66,7 @@ const ServicesAccordion = () => {
           <AccordionContent className="flex flex-col gap-4 md:ps-6 text-lg">
             {service.description}
             <CustomButton
-              label={<ArrowRight className="text-xs" width={16} />}
+              label={<ArrowRightIcon className="text-xs" width={16} />}
               className="text-sm p-1 aspect-square  w-fit h-fit bg-foreground text-background rounded-full hover:bg-foreground/90 font-semibold"
             />
           </AccordionContent>
