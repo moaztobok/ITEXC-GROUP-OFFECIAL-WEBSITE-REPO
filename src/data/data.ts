@@ -3,22 +3,22 @@ export const services = [
   {
     title: "Software development",
     desc: "Custom software solutions",
-    href: "/services/software-development"
+    href: "/services/engineering"
   },
   {
     title: "Branding & Design",
     desc: "Impactful brand identity",
-    href: "/services/branding-and-design"
+    href: "/services/studio"
   },
   {
     title: "Erp Solutions",
     desc: "Streamline core operations",
-    href: "/services/erp-solutions"
+    href: "/services/erp"
   },
   {
     title: "Hr Managments",
     desc: "Optimize workforce management",
-    href: "/services/hr-management"
+    href: "/services/hr"
   }
 ];
 export const units = [

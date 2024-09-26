@@ -7,7 +7,7 @@ const ItexcAcaddmy = () => {
   return (
     <section className="bg-muted relative overflow-hidden">
       <FadeElement>
-        <div className=" flex wrapper flex-col md:flex-row  gap-8">
+        <div className="flex wrapper md:my-0 flex-col md:flex-row  gap-8">
           <div className="flex flex-col justify-center md:flex-[0.5] gap-6">
             <span className="font-semibold ">Our incubator</span>
             <GradualSpacing

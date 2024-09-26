@@ -31,17 +31,17 @@ const SmallScreenNav = () => {
           <NavigationMenuList className="flex flex-col items-start">
             <EmbededLink />
             <NavLink
-              className="px-0 font-semibold hover:text-primary"
+              className="px-0 font-semibold"
               href="/carrers"
               title="Carrers"
             />
             <NavLink
-              className="px-0 font-semibold hover:text-primary"
+              className="px-0 font-semibold"
               href="/about-us"
               title="About us"
             />
             <NavLink
-              className="px-0 font-semibold hover:text-primary"
+              className="px-0 font-semibold"
               href="/consulting"
               title="Consulting"
             />
