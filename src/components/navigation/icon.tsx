@@ -1,11 +1,13 @@
-export const Icon = ({ icon, wordmark = '#fff' }: { icon: string, wordmark?: string }) => {
+export const Icon = ({
+  icon,
+  wordmark = "#fff"
+}: {
+  icon: string;
+  wordmark?: string;
+}) => {
   return (
     <svg viewBox="0 0 650 230" width="110" xmlns="http://www.w3.org/2000/svg">
-      <g
-        style={{ fill: icon }}
-        className="transition-colors duration-500"
-
-      >
+      <g style={{ fill: icon }} className="transition-colors duration-500">
         <path d="M91.72,222.51C42.19,222.51,1.9,180.12,1.9,128.02v-41.7h41.52v41.7c0,29.21,21.67,52.97,48.31,52.97s48.31-23.76,48.31-52.97v-41.57h41.52v41.57c0,52.1-40.3,94.49-89.83,94.49Z" />
         <circle cx="22.66" cy="41.55" r="22.66" />
         <rect x="117.57" y="20.91" width="86.67" height="41.29" />

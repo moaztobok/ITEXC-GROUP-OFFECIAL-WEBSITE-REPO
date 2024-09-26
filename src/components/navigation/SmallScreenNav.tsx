@@ -15,7 +15,7 @@ import { Icon } from "./icon";
 import NavLink from "./NavLink";
 const SmallScreenNav = () => {
   return (
-    <Sheet >
+    <Sheet>
       <SheetTrigger asChild>
         <Button className="bg-transparent hover:bg-transparent">
           <MenuIcon />
@@ -48,7 +48,9 @@ const SmallScreenNav = () => {
           </NavigationMenuList>
         </NavigationMenu>
         <SheetClose />
-        <SheetDescription className="mt-auto">Pursue excellence</SheetDescription>
+        <SheetDescription className="mt-auto">
+          Pursue excellence
+        </SheetDescription>
       </SheetContent>
     </Sheet>
   );
