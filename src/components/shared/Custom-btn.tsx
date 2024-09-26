@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
-import React, { ReactElement } from "react";
+import React, { ReactNode } from "react";
 import { Button, ButtonProps } from "../ui/button";
 
 export interface CustomButtonProps extends ButtonProps {
-  label: ReactElement;
+  label: string | ReactNode;
 }
 
 export const CustomButton = React.forwardRef<
