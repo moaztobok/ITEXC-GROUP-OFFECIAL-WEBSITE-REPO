@@ -1,5 +1,6 @@
 import ArrowButton from "@/components/shared/ArrowButton";
 import { Card } from "@/components/ui/card";
+import { truncateString } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -25,13 +26,15 @@ const CustomerCards = ({
           height={100}
           alt={title}
           src={image}
-          className="w-full object-cover aspect-[5/3]  top-0 left-0"
+          className="w-full object-cover aspect-[6/4]  top-0 left-0"
         />
       </div>
       <Link href={serviceUrl} className="text-lg font-semibold hover:underline">
         {title}
       </Link>
-      <span className="text-muted-foreground">{description}</span>
+      <span className="text-muted-foreground">
+        {truncateString(description, 150)}
+      </span>
       <Link
         href={url}
         className="inline-flex items-center gap-4 hover:opacity-50 mt-auto"

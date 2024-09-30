@@ -1,6 +1,6 @@
 import { FadeElement } from "@/components/magicui/fade-text";
 import { CustomButton } from "@/components/shared/Custom-btn";
-import AcademyGraphics from "./Components/AcademyGraphics";
+import AcademyGraphics from "./AcademyGraphics";
 import GradualSpacing from "../magicui/gradual-spacing";
 
 const ItexcAcaddmy = () => {
@@ -48,7 +48,7 @@ const ItexcAcaddmy = () => {
             <div>
               <CustomButton
                 label="Enroll now"
-                className="text-lg border y bg-foreground border-foreground hover:bg-foreground/85 "
+                className="text-lg border bg-foreground border-foreground hover:bg-foreground/85 "
               />
             </div>
           </div>

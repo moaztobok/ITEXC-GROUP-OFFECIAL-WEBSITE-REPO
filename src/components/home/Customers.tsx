@@ -1,7 +1,7 @@
 import { customerData } from "@/data/data";
 import { FadeElement } from "../magicui/fade-text";
 import GradualSpacing from "../magicui/gradual-spacing";
-import CustomerCards from "./Components/CustomerCards";
+import CustomerCards from "./CustomerCards";
 
 const Customers = () => {
   return (

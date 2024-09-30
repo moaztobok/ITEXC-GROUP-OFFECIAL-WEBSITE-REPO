@@ -23,10 +23,10 @@ export const services = [
 ];
 export const units = [
   {
-    title: "Itexc academy",
-    desc: "Develop talent, nurture entrepreneurs.",
+    title: "Incubyte",
+    desc: "Incubate,Develop talent, nurture entrepreneurs.",
     url: "/units/itexc-academy",
-    imageUrl: "/icons/academy.svg"
+    imageUrl: "/icons/incubyte.dz.svg"
   },
   {
     title: "Itexc studio",
@@ -50,42 +50,50 @@ export const units = [
 export const carouselData: CarouselData[] = [
   {
     id: "1",
-    title: "Revolutionizing E-commerce with AI",
+    title: "Neuron : Streamlining Medical Office Management",
     description:
-      "Our AI-powered platform optimizes product recommendations, inventory management, and customer experiences, driving significant revenue growth for online retailers.",
-    image: "/images/project1.jpg",
-    url: "/projects/e-commerce-ai"
+      " Cabinet Medical is a comprehensive digital platform designed to simplify the operations of medical offices. With features like patient management, medical records, scheduling, and financial tracking, Cabinet Medical aims to improve efficiency, reduce errors, and enhance overall patient care..",
+    image: "/thumbnails/Neuron.png",
+    url: "/projects/neuron"
   },
   {
     id: "2",
-    title: "Sustainable Energy Solutions",
+    title: "Stack Render: Accelerating Code Generation",
     description:
-      "Developing innovative technologies to harness renewable energy sources and reduce carbon footprint.",
-    image: "/images/project2.jpg",
+      "Stack Render is a code generation platform that leverages AI and machine learning to streamline the software development process. By analyzing past data and user inputs, Stack Render generates customizable code in various programming languages and frameworks, saving developers time and effort. With its user-friendly interface and integration capabilities, Stack Render empowers developers to build high-quality applications faster and more efficiently.",
+    image: "/thumbnails/stack-render.png",
     url: "/projects/sustainable-energy"
   },
   {
     id: "3",
-    title: "Healthcare Innovation: Personalized Medicine",
+    title: "LAQUI Driver : Safety for women drivers",
     description:
-      "Creating a platform for precision medicine by analyzing patient data to develop tailored treatment plans.",
-    image: "/images/project3.jpg",
+      "LAQUI Driver is a mobile application that promotes safety for transportation for women. As a LAQUI driver, you are an ambassador of safety and comfort, playing an essential role in the daily lives of women in the Oranie region. By providing reliable and attentive service, you help create positive travel experiences and alleviate safety concerns.",
+    image: "/thumbnails/laqui.png",
     url: "/projects/personalized-medicine"
   },
   {
     id: "4",
-    title: "Augmented Reality Experiences",
+    title: "ZST: Streamlining Wholesale-to-Retail Transactions",
     description:
-      "Immersive AR applications for education, gaming, and retail, pushing the boundaries of interactive technology.",
-    image: "/images/project4.jpg",
-    url: "/projects/ar-experiences"
+      "ZST is a comprehensive e-commerce platform designed to connect wholesalers and retailers, streamlining the process of buying and selling goods. With features like product management, bidding, and order processing, ZST aims to improve efficiency, reduce costs, and enhance transparency in the wholesale-to-retail market.",
+    image: "/thumbnails/zst.png",
+    url: "/projects/zst"
   },
   {
     id: "5",
-    title: "Cybersecurity Fortress",
+    title: "Vitolker: Comprehensive Language Services",
     description:
-      "Protecting sensitive data with cutting-edge cybersecurity solutions, ensuring robust digital defenses.",
-    image: "/images/project5.jpg",
+      "Vitolker provides professional translation, interpretation, proofreading, copywriting, desktop publishing, and voiceover services. With a focus on quality and efficiency, we help businesses and individuals communicate effectively across languages",
+    image: "/thumbnails/vitolker.jpeg",
+    url: "/projects/cybersecurity"
+  },
+  {
+    id: "6",
+    title: "Akarkom's solution combines technology and real estate",
+    description:
+      "Akarkom is a comprehensive real estate platform that simplifies the process of finding and purchasing properties. With a focus on quality and transparency, Akarkom offers a range of services, including structural studies and online property sales.",
+    image: "/thumbnails/Akarkom.png",
     url: "/projects/cybersecurity"
   }
 ];
@@ -96,7 +104,7 @@ export const customerData: CustomerCard[] = [
     description:
       "We deliver customized ERP systems that integrate your core business processes. Our solutions streamline operations, improve efficiency, and provide real-time insights for informed decision-making across finance, HR, supply chain, and more.",
     url: "/units/erp-solutions",
-    image: "/images/erp.png",
+    image: "/thumbnails/odoo-partner.png",
     serviceUrl: "/services/erp"
   },
   {
@@ -104,7 +112,7 @@ export const customerData: CustomerCard[] = [
     description:
       "Our creative team develops strong brand identities that resonate with your audience. We create impactful logos, engaging websites, and consistent visual branding to enhance your market presence and drive customer engagement.",
     url: "/units/studio",
-    image: "/images/studio.png",
+    image: "/thumbnails/studio.png",
     serviceUrl: "/services/studio"
   },
   {
@@ -112,7 +120,7 @@ export const customerData: CustomerCard[] = [
     description:
       "We offer comprehensive HR solutions to simplify workforce management. From recruitment to performance tracking, our user-friendly systems support your HR team in nurturing talent and boosting organizational productivity.",
     url: "/units/hr",
-    image: "/images/hr.png",
+    image: "/thumbnails/hr.png",
     serviceUrl: "/services/hr"
   }
 ];
