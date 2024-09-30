@@ -1,4 +1,22 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm run format:all && pnpm run lint
+# Run lint
+pnpm run lint
+
+# Run Prettier
+pnpm run format:all
+
+# Check if there are any changes
+if git diff --quiet; then
+    echo "No changes after running lint:fix and prettier"
+else
+    # Stage the changes made by lint:fix and prettier
+    git add .
+fi
+
+# Run a final lint check
+pnpm run lint || (echo "Linting failed. Please fix the issues and try committing again." && exit 1)
+
+# If we've made it this far, the commit can proceed
+exit 0
