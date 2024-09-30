@@ -90,3 +90,7 @@ html.lenis body {
 .lenis.lenis-stopped {
   overflow: hidden !important;
 }
+.spline-watermark {
+  display: none !important;
+  outline: none !important;
+}

@@ -1,7 +1,7 @@
 import { FadeElement } from "../magicui/fade-text";
 import GradualSpacing from "../magicui/gradual-spacing";
 import { CustomButton } from "../shared/Custom-btn";
-import ServicesAccordion from "./Components/ServicesAccordion";
+import ServicesAccordion from "./ServicesAccordion";
 
 const Services = () => {
   return (

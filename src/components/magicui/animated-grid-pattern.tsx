@@ -12,6 +12,7 @@ interface GridPatternProps {
   y?: number;
   strokeDasharray?: any;
   numSquares?: number;
+  rectangleClassName?: string;
   className?: string;
   maxOpacity?: number;
   duration?: number;
@@ -30,6 +31,7 @@ export function GridPattern({
   duration = 4,
   //eslint-disable-next-line
   repeatDelay = 0.5,
+  rectangleClassName,
   ...props
 }: GridPatternProps) {
   const id = useId();
@@ -127,7 +129,7 @@ export function GridPattern({
       <svg x={x} y={y} className="overflow-visible">
         {squares.map(({ pos: [x, y], id }, index) => (
           <motion.rect
-            className={cn("fill-current")}
+            className={cn("fill-current", rectangleClassName)}
             initial={{ opacity: 0 }}
             animate={{ opacity: maxOpacity }}
             transition={{

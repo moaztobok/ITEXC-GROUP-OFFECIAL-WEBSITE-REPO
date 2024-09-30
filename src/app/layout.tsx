@@ -3,9 +3,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation/navigation";
-import Contact from "@/components/home/Contact";
-import Footer from "@/components/home/Footer";
-import LenisScroll from "@/components/home/Components/LenisScroll";
+
+import LenisScroll from "@/components/home/LenisScroll";
+import Contact from "@/components/shared/Contact";
+import SubFooter from "@/components/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,7 @@ export default function RootLayout({
         <Navigation />
         {children}
         <Contact />
-        <Footer />
+        <SubFooter />
       </body>
     </html>
   );

@@ -1,7 +1,12 @@
 "use client";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 const LenisScroll = () => {
+  const pathName = usePathname();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathName]);
   useEffect(() => {
     const lenis = new Lenis();
     function raf(time: number) {

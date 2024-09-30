@@ -8,7 +8,7 @@ import {
   Mail,
   Phone
 } from "lucide-react";
-import ContactForm from "./Components/ContactForm";
+import ContactForm from "../home/ContactForm";
 import { FadeElement } from "../magicui/fade-text";
 
 const Contact = () => {

@@ -1,10 +1,10 @@
 import { FadeElement } from "../magicui/fade-text";
 import { CustomButton } from "../shared/Custom-btn";
-import TdGraphics from "./Components/TdGraphics";
+import TdGraphics from "./TdGraphics";
 
 const HeroSection = () => {
   return (
-    <section className="h-screen bg-foreground grid items-center text-background relative overflow-hidden">
+    <section className="h-screen bg-black grid items-center text-background relative overflow-hidden">
       <TdGraphics />
       <FadeElement>
         <div className="wrapper flex flex-col md:justify-center items-center md:gap-2 relative overflow-hidden">

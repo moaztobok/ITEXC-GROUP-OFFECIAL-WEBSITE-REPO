@@ -8,6 +8,7 @@ import {
   CarouselPrevious
 } from "@/components/ui/carousel";
 import { CarouselData } from "@/data/types";
+import { truncateString } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -19,7 +20,7 @@ const ProjectsCarousel = ({ data }: { data: CarouselData[] }) => {
           <CarouselItem key={project.id} className="md:max-w-xl pl-7">
             <CardContent className="flex my-auto flex-col p-0 gap-4">
               <Image
-                src="/images/background.jpg"
+                src={project.image}
                 width={400}
                 height={300}
                 className="w-full cursor-pointer h-80  hover:scale-105 transition-all duration-300 object-cover"
@@ -29,7 +30,7 @@ const ProjectsCarousel = ({ data }: { data: CarouselData[] }) => {
                 {project.title}
               </Link>
               <span className="text-muted-foreground">
-                {project.description}
+                {truncateString(project.description, 200)}
               </span>
             </CardContent>
           </CarouselItem>

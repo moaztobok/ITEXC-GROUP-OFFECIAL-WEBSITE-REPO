@@ -4,7 +4,7 @@ import { FadeElement } from "../magicui/fade-text";
 import GradualSpacing from "../magicui/gradual-spacing";
 import ArrowButton from "../shared/ArrowButton";
 import { CustomButton } from "../shared/Custom-btn";
-import ProjectsCarousel from "./Components/ProjectsCarousel";
+import ProjectsCarousel from "./ProjectsCarousel";
 
 const Projects = () => {
   return (
