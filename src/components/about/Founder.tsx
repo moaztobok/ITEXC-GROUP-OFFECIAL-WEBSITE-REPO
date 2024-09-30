@@ -14,8 +14,8 @@ const Founder = () => {
         <div className="flex flex-col justify-center gap-6 text-lg">
           <Image src="/icons/quote.svg" alt="quote" width={40} height={40} />
           <p className="text-2xl md:text-4xl font-semibold max-w-full ">
-            &quot;We are coding a technologically advanced Algeria it into reality,
-            one innovative mind at a time&quot;
+            &quot;We are coding a technologically advanced Algeria it into
+            reality, one innovative mind at a time&quot;
           </p>
           <div className="flex flex-col gap-2 font-medium">
             <p>Founder & general manager of ITEXC GROUP</p>

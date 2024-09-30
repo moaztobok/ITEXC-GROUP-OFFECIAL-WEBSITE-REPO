@@ -13,12 +13,12 @@ const KeyFacts = () => {
             className="justify-start Title"
           />
           <p className="text-justify">
-            ITEXC GROUP aims to transform Algeria&apos;s IT landscape by delivering
-            exceptional solutions, fostering talent, and driving innovation. Led
-            by Laid Belhadj, the company empowers businesses and individuals
-            through technology, shaping the future while building a community of
-            skilled professionals committed to excellence and growth in the IT
-            sector.
+            ITEXC GROUP aims to transform Algeria&apos;s IT landscape by
+            delivering exceptional solutions, fostering talent, and driving
+            innovation. Led by Laid Belhadj, the company empowers businesses and
+            individuals through technology, shaping the future while building a
+            community of skilled professionals committed to excellence and
+            growth in the IT sector.
           </p>
         </div>
       </FadeElement>
