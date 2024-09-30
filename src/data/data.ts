@@ -69,7 +69,7 @@ export const carouselData: CarouselData[] = [
     title: "LAQUI Driver : Safety for women drivers",
     description:
       "LAQUI Driver is a mobile application that promotes safety for transportation for women. As a LAQUI driver, you are an ambassador of safety and comfort, playing an essential role in the daily lives of women in the Oranie region. By providing reliable and attentive service, you help create positive travel experiences and alleviate safety concerns.",
-    image: "/thumbnails/laqui.png",
+    image: "/thumbnails/Laqui.png",
     url: "/projects/personalized-medicine"
   },
   {
