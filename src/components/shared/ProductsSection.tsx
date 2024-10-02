@@ -1,23 +1,24 @@
-import { customerData } from "@/data/data";
-import { FadeElement } from "../magicui/fade-text";
-import GradualSpacing from "../magicui/gradual-spacing";
-import CustomerCards from "./CustomerCards";
+import CustomerCards from "@/components/home/CustomerCards";
+import { FadeElement } from "@/components/magicui/fade-text";
+import { Product } from "@/data/types";
 
-const Customers = () => {
+const ProductSection = ({
+  label,
+  title,
+  data
+}: {
+  label: string;
+  title: string;
+  data: Product[];
+}) => {
   return (
     <section className="min-h-screen grid items-center relative overflow-hidden">
       <FadeElement>
         <div className="flex flex-col wrapper gap-6">
-          <span className="font-semibold">Our Customers</span>
-          <GradualSpacing
-            text="Solutions for Success"
-            className="justify-start Title"
-          ></GradualSpacing>
-          {/* <h2 className="justify-start block md:hidden Title">
-            Solutions for Success
-          </h2> */}
+          <span className="font-semibold">{label}</span>
+          <h2 className="justify-start Title">{title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {customerData.map((data, index) => (
+            {data.map((data, index) => (
               <FadeElement key={index}>
                 <CustomerCards
                   title={data.title}
@@ -35,4 +36,4 @@ const Customers = () => {
   );
 };
 
-export default Customers;
+export default ProductSection;

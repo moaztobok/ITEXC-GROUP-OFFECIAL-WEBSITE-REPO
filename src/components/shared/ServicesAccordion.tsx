@@ -1,49 +1,15 @@
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
-import { CustomButton } from "../shared/Custom-btn";
+import { CustomButton } from "./Custom-btn";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger
 } from "../ui/accordion";
+import { productsItems } from "@/data/types";
 
-const services = [
-  {
-    id: "item-1",
-    icon: "./icons/software-icon.svg",
-    title: "Software engineering",
-    description:
-      "Our software engineers build custom solutions tailored to your business needs. From web and mobile apps to complex enterprise systems, we deliver high-quality software.",
-    url: "/services/software-engineering"
-  },
-  {
-    id: "item-2",
-    icon: "./icons/design-icon.svg",
-    title: "Design and branding",
-    description:
-      "We create stunning designs that capture your brand's essence. Our team specializes in UI/UX, branding, and graphic design. We help you stand out in a crowded market.",
-    url: "/services/design-branding"
-  },
-  {
-    id: "item-3",
-    icon: "./icons/erp-icon.svg",
-    title: "Enterprise resource planning",
-    description:
-      "Optimize your operations with our ERP solutions. We implement, customize, and support ERP systems to drive efficiency",
-    url: "/services/erp"
-  },
-  {
-    id: "item-4",
-    icon: "./icons/hr-icon.svg",
-    title: "Human resource services",
-    description:
-      "We help you manage your workforce effectively. Our HR services include recruitment, payroll, and HR consulting.",
-    url: "/services/hr"
-  }
-];
-
-const ServicesAccordion = () => {
+const ServicesAccordion = ({ services }: { services: productsItems[] }) => {
   return (
     <Accordion type="single" collapsible className="w-full md:max-w-[65%]">
       {services.map((service) => (

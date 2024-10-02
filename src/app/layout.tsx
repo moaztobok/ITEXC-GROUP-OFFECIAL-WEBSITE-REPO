@@ -7,6 +7,7 @@ import Navigation from "@/components/navigation/navigation";
 import LenisScroll from "@/components/home/LenisScroll";
 import Contact from "@/components/shared/Contact";
 import SubFooter from "@/components/shared/Footer";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn(inter.className, "font-medium")}>
         <LenisScroll />
         <Navigation />
         {children}
