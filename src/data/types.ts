@@ -5,17 +5,18 @@ export type CarouselData = {
   image: string;
   url: string;
 };
-export type CustomerCard = {
-  title: string;
-  description: string;
-  url: string;
-  image: string;
-  serviceUrl: string;
-};
+
 export interface Product {
   title: string;
   description: string;
   url: string;
   serviceUrl: string;
   image: string;
+}
+
+export interface ProcessStep {
+  image: string;
+  title: string;
+  icon: string;
+  description: string;
 }

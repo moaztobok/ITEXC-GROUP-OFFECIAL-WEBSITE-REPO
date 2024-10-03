@@ -1,4 +1,4 @@
-import { CarouselData, CustomerCard } from "./types";
+import { CarouselData, ProcessStep, Product } from "./types";
 export const services = [
   {
     title: "Software development",
@@ -133,7 +133,7 @@ export const carouselData: CarouselData[] = [
   }
 ];
 
-export const customerData: CustomerCard[] = [
+export const customerData: Product[] = [
   {
     title: "ERP SOLUTIONS",
     description:
@@ -160,58 +160,61 @@ export const customerData: CustomerCard[] = [
   }
 ];
 
-export const WebDevProducts: CustomerCard[] = [
+export const WebDevProducts: Product[] = [
   {
     title: "Custom Website Development",
     description:
       "Create a unique and tailored website that reflects your brand and meets your specific business needs.",
-    url: "/units/erp-solutions",
+    url: "/#",
     image: "https://images.unsplash.com/photo-1727773377765-04d5bd488f44  ",
-    serviceUrl: "/services/erp"
+    serviceUrl: "/#"
   },
   {
     title: "E-commerce Development",
     description:
       "Build an online store to sell products or services, complete with payment processing, inventory management, and shipping options.",
-    url: "/units/studio",
+    url: "/#",
     image: "https://images.unsplash.com/photo-1688561808434-886a6dd97b8c",
-    serviceUrl: "/services/studio"
+    serviceUrl: "/#"
   },
   {
     title: "Responsive Web Design",
     description:
       "Ensure your website is accessible and looks great on all devices, from desktops to smartphones.",
-    url: "/units/hr",
+    url: "/#",
     image:
       "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    serviceUrl: "/services/hr"
+    serviceUrl: "/#"
   }
 ];
 
-export const MobileDevProducts: CustomerCard[] = [
+export const MobileDevProducts: Product[] = [
   {
     title: "Native Mobile App Development",
     description:
       "Create high-performance apps tailored for iOS and Android devices.",
-    url: "/units/erp-solutions",
-    image: "/thumbnails/odoo-partner.png",
-    serviceUrl: "/services/erp"
+    url: "/#",
+    image:
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    serviceUrl: "/#"
   },
   {
     title: "Hybrid Mobile App Development",
     description:
       "Build cross-platform apps using web technologies for faster development.",
-    url: "/units/studio",
-    image: "/thumbnails/studio.png",
-    serviceUrl: "/services/studio"
+    url: "/#",
+    image:
+      "https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    serviceUrl: "/#"
   },
   {
     title: "Mobile App Design and UI/UX",
     description:
       "Create visually appealing and user-friendly interfaces for your mobile apps.",
-    url: "/units/hr",
-    image: "/thumbnails/hr.png",
-    serviceUrl: "/services/hr"
+    url: "/#",
+    image:
+      "https://images.unsplash.com/photo-1602576666092-bf6447a729fc?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    serviceUrl: "/#"
   }
 ];
 export const projectStages = [
@@ -239,5 +242,70 @@ export const projectStages = [
     icon: "trophy",
     description:
       "Bringing Ideas to Life implement strategy using agile methods, manage changes."
+  }
+];
+
+export const engineeringProces: ProcessStep[] = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1633409361618-c73427e4e206?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Planning and Analysis",
+    icon: "planning-icon.svg",
+    description:
+      "Understand requirements, conduct feasibility studies, and create project plans."
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1659728516023-34bc994a626a?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Design and Architecture",
+    icon: "design-icon.svg",
+    description:
+      "Define system architecture, database design, and user interface."
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1652449823136-b279fbe5dfd3?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Development and Coding",
+    icon: "development-icon.svg",
+    description: "Write code, conduct unit and integration testing."
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1682846133858-c0599bc99874?q=80&w=1796&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Testing and Deployment",
+    icon: "testing-icon.svg",
+    description:
+      "Conduct system and user acceptance testing, deploy the software, and provide ongoing maintenance."
+  }
+];
+
+export const studioSteps: ProcessStep[] = [
+  {
+    image: "consultation-image.png",
+    title: "Initial Consultation",
+    icon: "consultation-icon.svg",
+    description:
+      "Discuss your project goals and needs. We'll provide tailored recommendations."
+  },
+  {
+    image: "discovery-image.png",
+    title: "Discovery and Planning",
+    icon: "discovery-icon.svg",
+    description:
+      "Together, we'll define the scope of your project, set goals, and create a detailed plan."
+  },
+  {
+    image: "creation-image.png",
+    title: "Creative Execution",
+    icon: "creation-icon.svg",
+    description:
+      "Our team will bring your vision to life through branding, design, photography, or other services you choose."
+  },
+  {
+    image: "delivery-image.png",
+    title: "Delivery and Support",
+    icon: "delivery-icon.svg",
+    description:
+      "We'll deliver high-quality results and provide ongoing support to ensure your satisfaction."
   }
 ];

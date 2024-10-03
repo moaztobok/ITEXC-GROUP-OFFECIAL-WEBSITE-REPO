@@ -1,3 +1,4 @@
+import EngineeringProcess from "./_components/EngineeringProcess";
 import HeroSection from "./_components/HeroSection";
 import MobileDevelopment from "./_components/MobileDevelopment";
 import MobileProducts from "./_components/MobileProducts";
@@ -12,6 +13,7 @@ const page = () => {
       <WebProducts />
       <MobileDevelopment />
       <MobileProducts />
+      <EngineeringProcess />
     </main>
   );
 };

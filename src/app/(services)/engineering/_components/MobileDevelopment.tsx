@@ -3,7 +3,11 @@ import SectionWrapper from "@/components/shared/SectionWrapper";
 
 const MobileDevelopment = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper
+      className={{
+        section: "bg-muted"
+      }}
+    >
       <FadeElement className="flex-1">
         <h1 className="text-2xl font-semibold">
           Our <span className="text-primary">mobile development</span> services?

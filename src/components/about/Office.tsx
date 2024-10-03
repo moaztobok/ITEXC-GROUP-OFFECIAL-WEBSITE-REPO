@@ -1,9 +1,7 @@
-import React from "react";
-import SectionWrapper from "../shared/SectionWrapper";
 import Image from "next/image";
-import GradualSpacing from "../magicui/gradual-spacing";
-import { CustomButton } from "../shared/Custom-btn";
 import { FadeElement } from "../magicui/fade-text";
+import { CustomButton } from "../shared/Custom-btn";
+import SectionWrapper from "../shared/SectionWrapper";
 
 const Office = () => {
   return (
@@ -22,7 +20,7 @@ const Office = () => {
       </FadeElement>
       <FadeElement className="flex-1">
         <div className="flex flex-col gap-6 h-full justify-center">
-          <GradualSpacing text="Our office" className="justify-start Title" />
+          <h2 className="justify-start Title">Our office</h2>
           <p className="">
             Our head office extends over two floors with more than 230 m² for
             each floor, thoughtfully designed to foster productivity and

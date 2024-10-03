@@ -1,5 +1,4 @@
 import { FadeElement } from "../magicui/fade-text";
-import GradualSpacing from "../magicui/gradual-spacing";
 import { CustomButton } from "../shared/Custom-btn";
 
 const Engineering = () => {
@@ -9,13 +8,7 @@ const Engineering = () => {
         <FadeElement>
           <div className="flex flex-col gap-6">
             <span className="font-semibold">Our core</span>
-            <GradualSpacing
-              text="Software Excellence"
-              className="justify-start Title"
-            ></GradualSpacing>
-            {/* <h2 className="justify-start block md:hidden Title">
-              Software Excellence
-            </h2> */}
+            <h2 className="justify-start Title">Software Excellence</h2>
             <p>
               Where innovation meets code. We excel in crafting bespoke software
               solutions that transform your business challenges into powerful,

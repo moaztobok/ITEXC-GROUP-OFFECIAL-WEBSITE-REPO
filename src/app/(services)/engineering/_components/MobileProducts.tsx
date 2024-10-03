@@ -5,7 +5,7 @@ import React from "react";
 const MobileProducts = () => {
   return (
     <ProductSection
-      title=""
+      title="Mobile solutions"
       label="Elevate your business"
       data={MobileDevProducts}
     />

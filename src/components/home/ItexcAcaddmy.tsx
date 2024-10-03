@@ -1,7 +1,6 @@
 import { FadeElement } from "@/components/magicui/fade-text";
 import { CustomButton } from "@/components/shared/Custom-btn";
 import AcademyGraphics from "./AcademyGraphics";
-import GradualSpacing from "../magicui/gradual-spacing";
 
 const ItexcAcaddmy = () => {
   return (
@@ -10,13 +9,7 @@ const ItexcAcaddmy = () => {
         <div className="flex wrapper md:my-0 flex-col md:flex-row  gap-8">
           <div className="flex flex-col justify-center md:flex-[0.5] gap-6">
             <span className="font-semibold ">Our incubator</span>
-            <GradualSpacing
-              text="INCUBYTE"
-              className="justify-start  Title"
-            ></GradualSpacing>
-            {/* <h2 className="justify-start block md:hidden Title">
-              ITEXC ACADEMY
-            </h2>             */}
+            <h2 className="justify-start Title">INCUBYTE DZ</h2>
             <p>
               INCUBYTE is your gateway to a successful career in technology. We
               offer industry-leading courses taught by seasoned professionals,

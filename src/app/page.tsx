@@ -1,10 +1,11 @@
 import Engineering from "@/components/home/Engineering";
 import HeroSection from "@/components/home/HeroSection";
 import ItexcAcaddmy from "@/components/home/ItexcAcaddmy";
-import Process from "@/components/home/Process";
 import Products from "@/components/home/Products";
 import Projects from "@/components/home/Projects";
 import Services from "@/components/home/Services";
+import Process from "@/components/shared/Process";
+import { projectStages } from "@/data/data";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Projects />
       <Products />
       <ItexcAcaddmy />
-      <Process />
+      <Process data={projectStages} />
     </>
   );
 }

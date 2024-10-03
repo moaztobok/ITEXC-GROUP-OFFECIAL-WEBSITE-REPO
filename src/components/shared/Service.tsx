@@ -1,6 +1,5 @@
 import React from "react";
 import { FadeElement } from "../magicui/fade-text";
-import GradualSpacing from "../magicui/gradual-spacing";
 
 const Service = ({
   label,
@@ -27,21 +26,8 @@ const Service = ({
         <FadeElement>
           <div className="flex flex-col gap-6">
             <span className="font-semibold">{label}</span>
-            <GradualSpacing
-              text={title}
-              className="justify-start Title"
-            ></GradualSpacing>
+            <h2 className="justify-start Title">{title}</h2>
             <p>{description}</p>
-            {/* <div className="mt-10 flex flex-col md:flex-row font-normal w-full md:w-auto gap-4">
-                            <CustomButton
-                                label="Start your project"
-                                className="text-lg border border-primary"
-                            />
-                            <CustomButton
-                                label="Learn more"
-                                className="text-lg text-foreground bg-foreground outline-2 hover:bg-foreground/85 text-white border"
-                            />
-                        </div> */}
             {children}
           </div>
         </FadeElement>
