@@ -9,17 +9,14 @@ const WebDevelopment = () => {
       }}
     >
       <FadeElement className="flex-1">
-        <h1 className="text-2xl font-semibold">
-          Our <span className="text-primary">web development</span> services
+        <h1 className="Title font-semibold">
+          Our <span className="text-primary">Web development</span> services
         </h1>
       </FadeElement>
-      <FadeElement className="flex-1 font-medium">
-        Web development offers a broad spectrum of services, such as creating
-        websites or web applications, providing cybersecurity measures,
-        designing user experiences (UX) and interfaces (UI), offering eCommerce
-        solutions, building website infrastructures, conducting quality
-        assurance testing, ongoing maintenance, consulting, and developing
-        custom content management systems (CMS).
+      <FadeElement className="flex-1 font-medium text-xl">
+        Web development covers website and web app creation, cybersecurity,
+        UX/UI design, eCommerce, infrastructure, testing, maintenance,
+        consulting, and custom CMS development.
       </FadeElement>
     </SectionWrapper>
   );

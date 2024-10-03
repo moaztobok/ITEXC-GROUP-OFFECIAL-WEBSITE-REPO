@@ -11,3 +11,85 @@ export const truncateString = (title: string, maxLength: number): string => {
   }
   return title.slice(0, maxLength) + "...";
 };
+
+export const getTailwindBackgroundColor = (pathname: string) => {
+  switch (pathname.toLowerCase()) {
+    case "/engineering":
+    case "software":
+      return "bg-primary";
+    case "/branding":
+      return "bg-primary-studio";
+    case "/erp":
+      return "bg-primary-erp";
+    case "/hr":
+      return "bg-primary-hr";
+    default:
+      return "bg-primary";
+  }
+};
+
+export const getUnitColor = (pathname: string) => {
+  switch (pathname.toLowerCase()) {
+    case "/engineering":
+    case "software":
+      return "#1F00FF";
+    case "/branding":
+      return "#FB3737";
+    case "/erp":
+      return "#FF0099";
+    case "/hr":
+      return "#B4F049";
+    default:
+      return "#1F00FF";
+  }
+};
+export const getTailwindTextColor = (pathname: string) => {
+  switch (pathname.toLowerCase()) {
+    case "hr":
+      return "text-black";
+    default:
+      return "text-white";
+  }
+};
+
+export const getTailwindFillColor = (pathname: string) => {
+  switch (pathname.toLowerCase()) {
+    case "main":
+    case "software":
+      return "fill-blue-500";
+    case "group":
+      return "fill-blue-700";
+    case "studio":
+      return "fill-red-500";
+    case "erp":
+      return "fill-pink-500";
+    case "hr":
+      return "fill-green-400";
+    default:
+      return "fill-gray-500";
+  }
+};
+
+export const getTailwindStrokeColor = (pathname: string) => {
+  switch (pathname.toLowerCase()) {
+    case "main":
+    case "software":
+      return "stroke-blue-500";
+    case "group":
+      return "stroke-blue-700";
+    case "studio":
+      return "stroke-red-500";
+    case "erp":
+      return "stroke-pink-500";
+    case "hr":
+      return "stroke-green-400";
+    default:
+      return "stroke-gray-500";
+  }
+};
+
+// Example usage:
+// const bgClass = getTailwindBackgroundColor('studio');
+// const textClass = getTailwindTextColor('studio');
+// const fillClass = getTailwindFillColor('studio');
+// const strokeClass = getTailwindStrokeColor('studio');

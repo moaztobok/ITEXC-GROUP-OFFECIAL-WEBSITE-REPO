@@ -24,7 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "font-medium")}>
+      <body className={cn(inter.className, "font-medium text-lg")}>
+        <div className="size-24 fixed top-1/2 z-50 flex"></div>
         <LenisScroll />
         <Navigation />
         {children}

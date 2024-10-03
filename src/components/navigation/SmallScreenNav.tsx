@@ -1,3 +1,4 @@
+"use client";
 import {
   Sheet,
   SheetClose,
@@ -7,21 +8,42 @@ import {
   SheetTitle,
   SheetTrigger
 } from "@/components/ui/sheet";
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 import { Button } from "../ui/button";
 import { NavigationMenu, NavigationMenuList } from "../ui/navigation-menu";
 import EmbededLink from "./EmbededLink";
 import { Icon } from "./icon";
 import NavLink from "./NavLink";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 const SmallScreenNav = () => {
+  const [open, setOpen] = useState(false);
+  const pathName = usePathname();
+  useEffect(() => {
+    setOpen(false);
+    return () => {
+      setOpen(false);
+    };
+  }, [pathName]);
+
   return (
-    <Sheet>
+    <Sheet open={open}>
       <SheetTrigger asChild>
-        <Button className="bg-transparent hover:bg-transparent">
+        <Button
+          className="bg-transparent hover:bg-transparent"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
           <MenuIcon />
         </Button>
       </SheetTrigger>
-      <SheetContent className="w-full min-h-screen text-xl overflow-scroll flex flex-col max-h-fit">
+      <SheetContent className="w-full text-xl min-h-screen overflow-scroll flex flex-col max-h-fit">
+        <X
+          size={24}
+          className="bg-foreground text-background absolute end-4 top-4 z-20 rounded-full"
+          onClick={() => setOpen(!open)}
+        />
         <SheetHeader>
           <SheetTitle>
             <Icon icon="#1F00FF" wordmark="#000000" />
