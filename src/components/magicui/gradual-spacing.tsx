@@ -26,7 +26,10 @@ export default function GradualSpacing({
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, amount: 0.8 });
   return (
-    <div className="flex justify-start space-x-0  " ref={ref}>
+    <div
+      className="flex justify-start space-x-0  max-w-full overflow-hidden "
+      ref={ref}
+    >
       <AnimatePresence>
         {text.split("").map((char, i) => (
           <motion.h1

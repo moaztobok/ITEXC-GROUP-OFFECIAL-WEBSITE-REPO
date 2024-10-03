@@ -1,5 +1,3 @@
-import React from "react";
-import GradualSpacing from "../magicui/gradual-spacing";
 import {
   Facebook,
   Hotel,
@@ -18,10 +16,7 @@ const Contact = () => {
         <div className=" flex wrapper flex-col md:flex-row  gap-8">
           <div className="flex flex-col justify-center md:flex-[0.5] gap-6">
             <span className="font-semibold ">Contact us</span>
-            <GradualSpacing
-              text="Let's get in touch!"
-              className="justify-start  Title"
-            />
+            <h2 className="justify-start  Title">Let&apos;s get in touch!</h2>
             <p>
               Got questions about the Itexc group and it’s units feel free to
               reach out.

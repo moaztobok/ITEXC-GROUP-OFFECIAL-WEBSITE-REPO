@@ -17,6 +17,9 @@
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
+    --studio: 0 95% 60%;
+    --erp: 324 100% 50%;
+    --hr: 82 85% 61%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 210 40% 96.1%;
@@ -45,6 +48,9 @@
     --primary-foreground: 222.2 47.4% 11.2%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
+    --studio: 0 95% 60%;
+    --erp: 324 100% 50%;
+    --hr: 82 85% 61%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
     --accent: 217.2 32.6% 17.5%;
@@ -76,7 +82,7 @@
     @apply hidden md:block absolute top-0 right-0 p-4 text-xs text-muted;
   }
   .Title {
-    @apply md:text-4xl text-3xl font-bold md:max-w-[50%];
+    @apply md:text-3xl text-2xl font-bold;
   }
 }
 

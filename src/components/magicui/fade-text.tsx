@@ -77,7 +77,7 @@ export function FadeElement({
 
   const trigger = useRef(null);
   const isInView = useInView(trigger, {
-    once: false,
+    once: true,
     amount: matches ? 0.3 : 0.1
   });
   const directionOffset = useMemo(() => {
