@@ -20,3 +20,11 @@ export interface ProcessStep {
   icon: string;
   description: string;
 }
+
+export interface Service {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+  url: string;
+}

@@ -7,9 +7,9 @@ import {
   AccordionItem,
   AccordionTrigger
 } from "../ui/accordion";
-import { productsItems } from "@/data/types";
+import { Service } from "@/data/types";
 
-const ServicesAccordion = ({ services }: { services: productsItems[] }) => {
+const ServicesAccordion = ({ services }: { services: Service[] }) => {
   return (
     <Accordion type="single" collapsible className="w-full md:max-w-[65%]">
       {services.map((service) => (
