@@ -38,7 +38,6 @@ const SmallScreenNav = () => {
           <MenuIcon />
         </Button>
       </SheetTrigger>
-
       <SheetContent className="w-full text-xl min-h-screen overflow-scroll flex flex-col max-h-fit">
         <X
           size={24}

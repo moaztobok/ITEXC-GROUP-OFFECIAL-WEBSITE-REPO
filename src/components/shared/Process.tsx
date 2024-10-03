@@ -9,7 +9,6 @@ const Process = ({ data }: { data: ProcessStep[] }) => {
       <FadeElement>
         <div className="wrapper flex flex-col md:flex-[0.5] gap-6">
           <span className="font-semibold ">Our process</span>
-
           <h2 className="justify-start  Title">Collaborate with Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 ">
             {data.map((step, index) => (

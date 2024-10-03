@@ -178,9 +178,9 @@ export const WebDevProducts: Product[] = [
     serviceUrl: "/#"
   },
   {
-    title: "Responsive Web Design",
+    title: "Content Management Systems (CMS)",
     description:
-      "Ensure your website is accessible and looks great on all devices, from desktops to smartphones.",
+      "Develop a robust CMS that allows you to manage your website's content easily, ensuring flexibility and scalability.",
     url: "/#",
     image:
       "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -281,31 +281,65 @@ export const engineeringProces: ProcessStep[] = [
 
 export const studioSteps: ProcessStep[] = [
   {
-    image: "consultation-image.png",
+    image:
+      "https://images.unsplash.com/photo-1670189577367-2c6ef31a4b8c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Initial Consultation",
     icon: "consultation-icon.svg",
     description:
       "Discuss your project goals and needs. We'll provide tailored recommendations."
   },
   {
-    image: "discovery-image.png",
+    image:
+      "https://images.unsplash.com/photo-1680539517189-1c4f9a1aabd4?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Discovery and Planning",
     icon: "discovery-icon.svg",
     description:
       "Together, we'll define the scope of your project, set goals, and create a detailed plan."
   },
   {
-    image: "creation-image.png",
+    image:
+      "https://images.unsplash.com/photo-1713332126538-0fe6208bf453?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Creative Execution",
     icon: "creation-icon.svg",
     description:
       "Our team will bring your vision to life through branding, design, photography, or other services you choose."
   },
   {
-    image: "delivery-image.png",
+    image:
+      "https://images.unsplash.com/photo-1713471288125-ad38c049e62d?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Delivery and Support",
     icon: "delivery-icon.svg",
     description:
       "We'll deliver high-quality results and provide ongoing support to ensure your satisfaction."
+  }
+];
+
+export const BrandingServices: Product[] = [
+  {
+    title: "Comprehensive Brand Development",
+    description:
+      "Craft a unique brand identity from scratch, including strategy, visual elements, and guidelines for consistency.",
+    url: "/#",
+    image:
+      "https://images.unsplash.com/photo-1727949238080-8f3355c0613b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    serviceUrl: "/#"
+  },
+  {
+    title: "Design & Photography Services",
+    description:
+      "Enhance your existing brand with stunning visual content through expert design and professional photography tailored for brands looking to build upon their current identity.",
+    url: "/#",
+    image:
+      "https://images.unsplash.com/photo-1617695744007-68ef55752789?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    serviceUrl: "/#"
+  },
+  {
+    title: "Custom Design Solutions",
+    description:
+      "Tailor unique design services to fit your specific needs, enhancing your brand's visual storytelling.",
+    url: "/#",
+    image:
+      "https://images.unsplash.com/photo-1668953296563-2f4e3e043929?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    serviceUrl: "/#"
   }
 ];

@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "@/lib/utils";
+import { cn, getUnitColor } from "@/lib/utils";
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import { useHover } from "usehooks-ts";
@@ -7,7 +7,9 @@ import { CustomButton } from "../shared/Custom-btn";
 import { Icon } from "./icon";
 import { NavigationItems } from "./NavLinks";
 import SmallScreenNav from "./SmallScreenNav";
+import { usePathname } from "next/navigation";
 const Navigation = () => {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = React.useState(false);
   const hoverRef = useRef(null);
   const isHover = useHover(hoverRef);
@@ -31,7 +33,9 @@ const Navigation = () => {
     >
       <div className="wrapper py-3 my-0 flex justify-between items-center">
         <Link href="/">
-          <Icon icon={isScrolled || isHover ? "#1F00FF" : "white"} />
+          <Icon
+            icon={isScrolled || isHover ? getUnitColor(pathname) : "white"}
+          />
         </Link>
         <div className={cn("gap-6 items-center hidden md:flex text-white ")}>
           <NavigationItems />

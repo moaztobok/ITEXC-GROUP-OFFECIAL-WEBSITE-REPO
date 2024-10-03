@@ -1,18 +1,22 @@
+"use client";
 import { FadeElement } from "@/components/magicui/fade-text";
 import { Icon } from "@/components/navigation/icon";
 import { CustomButton } from "@/components/shared/Custom-btn";
 import { Input } from "@/components/ui/input";
+import { getUnitColor } from "@/lib/utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const SubFooter = () => {
+  const pathname = usePathname();
   return (
     <footer className="bg-foreground text-background">
       <FadeElement>
         <div className="flex-col divide-y gap-4 my-0 wrapper">
           <div className="flex flex-col-reverse md:flex-row w-full gap-16 justify-between py-10">
             <div className="flex flex-col gap-8 justify-between ">
-              <Icon icon="#1F00FF" wordmark="#FFFFFF" />
+              <Icon icon={getUnitColor(pathname)} wordmark="#FFFFFF" />
               <div className="grid grid-cols-2 md:flex justify-between flex-wrap w-full gap-8">
                 <Link href="/jobs">Get a job</Link>
                 <Link href="/partners" className="ms-auto">
