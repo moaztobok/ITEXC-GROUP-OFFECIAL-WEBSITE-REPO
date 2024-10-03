@@ -265,14 +265,14 @@ export const engineeringProces: ProcessStep[] = [
   {
     image:
       "https://images.unsplash.com/photo-1652449823136-b279fbe5dfd3?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Development and Coding",
+    title: "Development and testing",
     icon: "development-icon.svg",
     description: "Write code, conduct unit and integration testing."
   },
   {
     image:
       "https://images.unsplash.com/photo-1682846133858-c0599bc99874?q=80&w=1796&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Testing and Deployment",
+    title: "Deployment and maintenance",
     icon: "testing-icon.svg",
     description:
       "Conduct system and user acceptance testing, deploy the software, and provide ongoing maintenance."
