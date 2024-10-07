@@ -245,7 +245,7 @@ export const projectStages = [
   }
 ];
 
-export const engineeringProces: ProcessStep[] = [
+export const engineeringProcess: ProcessStep[] = [
   {
     image:
       "https://images.unsplash.com/photo-1633409361618-c73427e4e206?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -341,5 +341,67 @@ export const BrandingServices: Product[] = [
     image:
       "https://images.unsplash.com/photo-1668953296563-2f4e3e043929?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     serviceUrl: "/#"
+  }
+];
+
+export const ErpProducts: Product[] = [
+  {
+    title: "Odoo ERP Integration",
+    description:
+      "Seamlessly integrate Odoo ERP into your business operations, ensuring smooth data flow, automation, and alignment with existing processes.",
+    url: "/#",
+    image: "/thumbnails/odoo-offre.png",
+    serviceUrl: "/#"
+  },
+  {
+    title: "Odoo Development",
+    description:
+      "Decoupling Odoo's, allowing you to build custom user interfaces for web, mobile, or other platforms while utilizing Odoo's powerful ERP features through APIs.",
+    url: "/#",
+    image: "/thumbnails/headless-development.png",
+    serviceUrl: "/#"
+  },
+  {
+    title: "Custom ERP Development",
+    description:
+      "Develop a fully customized ERP system with advanced security and scalability, designed to meet your unique business requirements and ensure ultimate flexibility.",
+    url: "/#",
+    image: "/thumbnails/custom-erp.png",
+    serviceUrl: "/#"
+  }
+];
+
+export const erpIntegrationProcess: ProcessStep[] = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1668417008465-da390a5d0add?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Requirement Gathering",
+    icon: "planning-icon.svg",
+    description:
+      "Collaborate with the client to define their ERP needs and objectives."
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1676825446819-284aad06dfdd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "System Design and Architecture",
+    icon: "design-icon.svg",
+    description:
+      "Outline the system architecture and required modules based on client specifications."
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1620987278429-ab178d6eb547?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Development and Integration",
+    icon: "development-icon.svg",
+    description:
+      "Build the ERP solution and ensure integration with existing systems through testing."
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1632292220916-e9c34dd75db2?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Deployment and Support",
+    icon: "testing-icon.svg",
+    description:
+      "Implement the ERP system, conduct user acceptance testing, and provide ongoing support."
   }
 ];
