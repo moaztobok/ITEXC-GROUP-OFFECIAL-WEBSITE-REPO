@@ -9,7 +9,7 @@ import StudioServices from "./_components/StudioServices";
 
 const page = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen selection:bg-primary-studio">
       <HeroSection />
       <Brand />
       <MaterialDesign />

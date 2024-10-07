@@ -9,7 +9,7 @@ const MobileDevelopment = () => {
       }}
     >
       <FadeElement className="flex-1">
-        <h1 className="text-3xl font-semibold">
+        <h1 className="Title font-semibold">
           Our <span className="text-primary">mobile development</span> services?
         </h1>
       </FadeElement>

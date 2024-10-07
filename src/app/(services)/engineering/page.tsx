@@ -7,7 +7,7 @@ import WebProducts from "./_components/WebProducts";
 
 const page = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen ">
       <HeroSection />
       <WebDevelopment />
       <WebProducts />
