@@ -19,15 +19,15 @@ const TdGraphics = () => {
     <>
       {matches ? (
         <iframe
-          src="https://my.spline.design/itexcwinklogohr-74e4d7b076b03ef8310f77e1361409df/"
-          className="absolute h-full -z-1"
+          src="https://my.spline.design/untitled-d9984655e457bb8c57fcf9d8470204a7/"
+          className="absolute h-full -z-1 select-none"
           width="120%"
           height="120%"
         ></iframe>
       ) : (
         <GridPattern
           className="opacity-30 stroke-white/30"
-          rectangleClassName="fill-primary-hr"
+          rectangleClassName="fill-primary"
         />
       )}
     </>

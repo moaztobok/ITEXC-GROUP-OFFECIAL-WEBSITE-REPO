@@ -14,14 +14,14 @@ export const truncateString = (title: string, maxLength: number): string => {
 
 export const getTailwindBackgroundColor = (pathname: string) => {
   switch (pathname.toLowerCase()) {
-    case "/engineering":
+    case "/services/engineering":
     case "software":
       return "bg-primary";
-    case "/branding":
+    case "/services/branding":
       return "bg-primary-studio";
-    case "/erp":
+    case "/services/erp":
       return "bg-primary-erp";
-    case "/hr":
+    case "/services/hr":
       return "bg-primary-hr";
     default:
       return "bg-primary";
@@ -30,14 +30,14 @@ export const getTailwindBackgroundColor = (pathname: string) => {
 
 export const getUnitColor = (pathname: string) => {
   switch (pathname.toLowerCase()) {
-    case "/engineering":
+    case "/services/engineering":
     case "software":
       return "#1F00FF";
-    case "/branding":
+    case "/services/branding":
       return "#FB3737";
-    case "/erp":
+    case "/services/erp":
       return "#FF0099";
-    case "/hr":
+    case "/services/hr":
       return "#B4F049";
     default:
       return "#1F00FF";

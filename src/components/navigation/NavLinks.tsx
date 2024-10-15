@@ -33,7 +33,7 @@ export function NavigationItems() {
           ))}
         </NavDropDown>
         <NavLink href="/carrers" title="Carrers" />
-        <NavLink href="/about-us" title="About us" />
+        <NavLink href="/about" title="About us" />
         <NavLink href="/consulting" title="Consulting" />
       </NavigationMenuList>
     </NavigationMenu>

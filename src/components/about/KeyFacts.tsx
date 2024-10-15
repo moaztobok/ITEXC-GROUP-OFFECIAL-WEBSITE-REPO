@@ -8,7 +8,7 @@ const KeyFacts = () => {
       <FadeElement className="flex-1 flex flex-col font-medium">
         <div className="flex flex-col gap-6 h-full justify-center">
           <h2 className="justify-start Title">What is Itexc group?</h2>
-          <p className="text-justify">
+          <p className="text-balance">
             ITEXC GROUP aims to transform Algeria&apos;s IT landscape by
             delivering exceptional solutions, fostering talent, and driving
             innovation. Led by Laid Belhadj, the company empowers businesses and

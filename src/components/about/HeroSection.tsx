@@ -11,7 +11,7 @@ const HeroSection = () => {
           <h1 className="md:w-auto md:text-left w-full text-center md:text-8xl text-4xl font-bold pointer-events-none">
             Your Partners in
           </h1>
-          <h1 className="w-full md:w-fit text-center md:text-8xl text-4xl font-bold pointer-events-none bg-primary p-4  ">
+          <h1 className="w-full md:w-fit text-center md:text-8xl text-4xl font-bold pointer-events-none text-primary">
             excellence
           </h1>
           <p className="md:w-1/2  md:text-left md: mt-4 text-base text-center  pointer-events-none">

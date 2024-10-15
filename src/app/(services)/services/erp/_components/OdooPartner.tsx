@@ -7,11 +7,7 @@ import React from "react";
 
 const OdooPartner = () => {
   return (
-    <SectionWrapper
-      className={{
-        section: "relative min-h-[500px]"
-      }}
-    >
+    <SectionWrapper>
       <FadeElement className="flex-1 z-10 flex flex-col gap-4">
         <h2 className="Title text-white">Your official Odoo Partner</h2>
         <h2 className="text-xl text-white">

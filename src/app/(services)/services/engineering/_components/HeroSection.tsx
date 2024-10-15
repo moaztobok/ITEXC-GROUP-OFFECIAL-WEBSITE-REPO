@@ -7,16 +7,14 @@ const HeroSection = () => {
       <TdGraphics />
       {/* <div className="aspect-square w-96 rounded-full blur-[200px] absolute -bottom-48 -right-48 z-50 scale-150 bg-primary" /> */}
       <FadeElement className="h-full">
-        <div className="p-4 max-w-[1440px] mx-auto flex flex-col justify-center h-full flex-1 gap-2 items-start md:gap-2 relative overflow-hidden pointer-events-none ">
+        <div className="p-4 max-w-[1440px] mx-auto flex flex-col justify-center h-full flex-1 gap-2 md:gap-4  items-start relative overflow-hidden pointer-events-none ">
           <h1 className="md:text-left w-full text-center md:text-8xl text-4xl font-bold pointer-events-none md:max-w-6xl">
             Engineering Digital
             <span className="text-primary p-4">Experiences</span>
           </h1>
-
-          <p className="md:w-1/2  md:text-left md: mt-4 text-base text-center  pointer-events-none">
-            harness the power of software engineering to transform ideas into
-            reality. Our expert team designs robust, scalable solutions that
-            drive business growth and technological advancement.
+          <p className="md:w-1/2  md:text-left text-base text-center  pointer-events-none">
+            Expert software engineering transforms ideas into robust, scalable
+            solutions, driving business growth and technological advancement.
           </p>
         </div>
       </FadeElement>

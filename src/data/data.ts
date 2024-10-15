@@ -3,47 +3,47 @@ export const services = [
   {
     title: "Software development",
     desc: "Custom software solutions",
-    href: "/engineering"
+    href: "/services/engineering"
   },
   {
     title: "Branding & Design",
     desc: "Impactful brand identity",
-    href: "/branding"
+    href: "/services/branding"
   },
   {
     title: "Erp Solutions",
     desc: "Streamline core operations",
-    href: "/erp"
+    href: "/services/erp"
   },
   {
     title: "Hr Managments",
     desc: "Optimize workforce management",
-    href: "/hr"
+    href: "/services/hr"
   }
 ];
 export const units = [
   {
-    title: "Incubyte",
-    desc: "Incubate,Develop talent, nurture entrepreneurs.",
-    url: "/units/itexc-academy",
-    imageUrl: "/icons/incubyte.dz.svg"
+    title: "Engineering",
+    desc: "Engineering excellence , harbor creative it solutions",
+    url: "/units/engineering",
+    imageUrl: "/icons/group.svg"
   },
   {
     title: "Itexc studio",
     desc: "Craft digital experiences, impactful branding.",
-    url: "/units/itexc-studio",
+    url: "/units/studio",
     imageUrl: "/icons/studio.svg"
   },
   {
     title: "Itexc erp",
     desc: "Streamline core operations with custom ERP.",
-    url: "/units/itexc-erp",
+    url: "/units/erp",
     imageUrl: "/icons/erp.svg"
   },
   {
     title: "Itexc hr",
     desc: "Optimize workforce management solutions.",
-    url: "/units/itexc-hr",
+    url: "/units/hr",
     imageUrl: "/icons/hr.svg"
   }
 ];
@@ -370,6 +370,36 @@ export const ErpProducts: Product[] = [
     serviceUrl: "/#"
   }
 ];
+export const HrServices: Product[] = [
+  {
+    title: "HR Outsourcing",
+    description:
+      "Outsource your HR functions to ensure smooth operations, reduce costs, and stay compliant with regulations while focusing on core business activities.",
+    url: "/#",
+    image:
+      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    serviceUrl: "/#"
+  },
+  {
+    title: "Recruitment & Talent Acquisition",
+    description:
+      "Find, screen, and onboard the best talent efficiently with our recruitment and talent acquisition services.",
+    url: "/#",
+    image:
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    serviceUrl: "/#"
+  },
+
+  {
+    title: "Employee Relations & Performance Management",
+    description:
+      "Improve employee relations and performance with structured appraisals, engagement strategies, and conflict resolution services.",
+    url: "/#",
+    image:
+      "https://images.unsplash.com/photo-1551135049-8a33b5883817?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    serviceUrl: "/#"
+  }
+];
 
 export const erpIntegrationProcess: ProcessStep[] = [
   {
@@ -403,5 +433,39 @@ export const erpIntegrationProcess: ProcessStep[] = [
     icon: "testing-icon.svg",
     description:
       "Implement the ERP system, conduct user acceptance testing, and provide ongoing support."
+  }
+];
+export const hrOutsourcingProcess: ProcessStep[] = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "HR Needs Assessment",
+    icon: "assessment-icon.svg",
+    description:
+      "Collaborate with the client to identify their HR needs and define key objectives for outsourcing."
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1693389107440-afe980ccbb8d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Customized HR Strategy",
+    icon: "strategy-icon.svg",
+    description:
+      "Design a tailored HR outsourcing plan, including recruitment, payroll, and compliance management."
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1659922119096-c25e816c9736?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Implementation and Management",
+    icon: "implementation-icon.svg",
+    description:
+      "Deploy the HR outsourcing plan, manage recruitment, payroll, and HR processes, ensuring smooth operations."
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1678945253402-def60535e81a?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Ongoing Support & Optimization",
+    icon: "support-icon.svg",
+    description:
+      "Provide continuous HR support and optimize processes based on feedback and performance metrics."
   }
 ];

@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import ContactForm from "../home/ContactForm";
 import { FadeElement } from "../magicui/fade-text";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -18,22 +19,22 @@ const Contact = () => {
             <span className="font-semibold ">Contact us</span>
             <h2 className="justify-start  Title">Let&apos;s get in touch!</h2>
             <p>
-              Got questions about the Itexc group and it’s units feel free to
-              reach out.
+              Got questions about the Itexc group or you have business inquires
+              feel free to reach out.
             </p>
-            <div className="flex flex-col mt-10 gap-4">
-              <div className="grid grid-cols-[24px_auto] text-xl  gap-4">
+            <div className="flex flex-col mt-10 gap-4 text-lg font-medium">
+              <div className="grid grid-cols-[24px_auto] items-center gap-4">
                 <Hotel size={24} className="mb-auto mt-1" />
                 <p>
                   Subdivision of the commune, Lot N01, Building N02, Dar
                   El-Beida, Algiers.
                 </p>
               </div>
-              <div className="flex text-xl  gap-4">
+              <div className="grid grid-cols-[24px_auto] items-center gap-4">
                 <Phone size={24} className="mb-auto mt-1" />
                 <p>+213 345 6789</p>
               </div>
-              <div className="flex text-xl  gap-4">
+              <div className="grid grid-cols-[24px_auto] items-center gap-4">
                 <Mail size={24} className="mb-auto mt-1" />
                 <p>contact@itexcgroup.com</p>
               </div>
@@ -43,13 +44,27 @@ const Contact = () => {
               <p className="text-2xl font-bold">Follow Us</p>
               <span className="flex gap-4">
                 <span className="text-background bg-foreground p-2">
-                  <Instagram size={24} className="stroke-background" />
+                  <Link href="https://www.linkedin.com/company/itexcgroup/">
+                    <Instagram size={24} className="stroke-background" />
+                  </Link>
                 </span>
                 <span className="text-background bg-foreground p-2">
-                  <Facebook size={24} className="fill-background" stroke="0" />
+                  <Link href="https://www.facebook.com/itexcgroup">
+                    <Facebook
+                      size={24}
+                      className="fill-background"
+                      stroke="0"
+                    />
+                  </Link>
                 </span>
                 <span className="text-background bg-foreground p-2">
-                  <Linkedin size={24} className="fill-background" stroke="1" />
+                  <Link href="https://www.linkedin.com/company/itexcgroup">
+                    <Linkedin
+                      size={24}
+                      className="fill-background"
+                      stroke="1"
+                    />
+                  </Link>
                 </span>
               </span>
             </div>
