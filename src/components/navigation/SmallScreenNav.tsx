@@ -33,10 +33,10 @@ const menuItems: Item[] = [
   {
     label: "Services",
     subItems: [
-      { label: "Software Development", href: "/engineering" },
-      { label: "Branding & Design", href: "/branding" },
-      { label: "ERP solutions", href: "/erp" },
-      { label: "Hr Managments", href: "/hr" }
+      { label: "Software Development", href: "/services/engineering" },
+      { label: "Branding & Design", href: "/services/branding" },
+      { label: "ERP solutions", href: "/services/erp" },
+      { label: "Hr Managments", href: "/services/hr" }
     ]
   },
   {

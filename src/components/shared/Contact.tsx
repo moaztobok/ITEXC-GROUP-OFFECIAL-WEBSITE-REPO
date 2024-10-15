@@ -44,12 +44,12 @@ const Contact = () => {
               <p className="text-2xl font-bold">Follow Us</p>
               <span className="flex gap-4">
                 <span className="text-background bg-foreground p-2">
-                  <Link href="/https://www.linkedin.com/company/itexcgroup/">
+                  <Link href="https://www.linkedin.com/company/itexcgroup/">
                     <Instagram size={24} className="stroke-background" />
                   </Link>
                 </span>
                 <span className="text-background bg-foreground p-2">
-                  <Link href="/https://www.facebook.com/itexcgroup">
+                  <Link href="https://www.facebook.com/itexcgroup">
                     <Facebook
                       size={24}
                       className="fill-background"
@@ -58,7 +58,7 @@ const Contact = () => {
                   </Link>
                 </span>
                 <span className="text-background bg-foreground p-2">
-                  <Link href="/https://www.linkedin.com/company/itexcgroup">
+                  <Link href="https://www.linkedin.com/company/itexcgroup">
                     <Linkedin
                       size={24}
                       className="fill-background"
