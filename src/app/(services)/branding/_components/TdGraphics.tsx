@@ -20,7 +20,7 @@ const TdGraphics = () => {
       {matches ? (
         <iframe
           src="https://my.spline.design/itexcwinklogostudio-c4e5a29f9e08ae2cabd7efefe886051d/"
-          className="absolute h-full -z-1"
+          className="absolute h-full -z-1 select-none"
           width="120%"
           height="120%"
         ></iframe>

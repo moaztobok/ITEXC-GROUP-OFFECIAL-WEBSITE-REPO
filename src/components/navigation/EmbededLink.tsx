@@ -8,6 +8,7 @@ import {
 import Link from "next/link";
 import { services, units } from "@/data/data";
 const EmbededLink = () => {
+  //this is a very bad component that was mad in a rush
   return (
     <Accordion type="multiple" className="w-full divide-x-0 divide-y-0">
       <AccordionItem value="item-1" className="border-none">

@@ -23,27 +23,27 @@ export const services = [
 ];
 export const units = [
   {
-    title: "Incubyte",
-    desc: "Incubate,Develop talent, nurture entrepreneurs.",
-    url: "/units/itexc-academy",
-    imageUrl: "/icons/incubyte.dz.svg"
+    title: "Engineering",
+    desc: "Engineering excellence , harbor creative it solutions",
+    url: "/units/engineering",
+    imageUrl: "/icons/group.svg"
   },
   {
     title: "Itexc studio",
     desc: "Craft digital experiences, impactful branding.",
-    url: "/units/itexc-studio",
+    url: "/units/studio",
     imageUrl: "/icons/studio.svg"
   },
   {
     title: "Itexc erp",
     desc: "Streamline core operations with custom ERP.",
-    url: "/units/itexc-erp",
+    url: "/units/erp",
     imageUrl: "/icons/erp.svg"
   },
   {
     title: "Itexc hr",
     desc: "Optimize workforce management solutions.",
-    url: "/units/itexc-hr",
+    url: "/units/hr",
     imageUrl: "/icons/hr.svg"
   }
 ];
