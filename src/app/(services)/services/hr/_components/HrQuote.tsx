@@ -5,8 +5,8 @@ import React from "react";
 const HrQuote = () => {
   return (
     <ProductSection
-      title="Mobile solutions"
-      label="Elevate your business"
+      title="How can we help you"
+      label="Empower your workforce"
       data={HrServices}
     />
   );
