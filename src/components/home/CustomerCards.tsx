@@ -1,18 +1,20 @@
-import ArrowButton from "@/components/shared/ArrowButton";
 import { Card } from "@/components/ui/card";
 import { Product } from "@/data/types";
 import { truncateString } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { GetQuoteModal } from "../shared/GetQuoteModal";
 
 const CustomerCards = ({
+  team_id,
   title,
   description,
   url,
   serviceUrl,
   image
 }: Product) => {
+  console.log(url);
   return (
     <Card className="border-none flex w-full h-full flex-col gap-4 shadow-none">
       <div className="w-full relative">
@@ -30,13 +32,12 @@ const CustomerCards = ({
       <span className="text-muted-foreground">
         {truncateString(description, 150)}
       </span>
-      <Link
-        href={url}
-        className="inline-flex items-center gap-4 hover:opacity-50 mt-auto"
-      >
-        {" "}
-        Get Quote <ArrowButton className="p-0" />
-      </Link>
+      <GetQuoteModal
+        buttonLabel="Get Quote"
+        buttonClassName="flex justify-start items-center gap-4 hover:opacity-50 mt-auto hover:bg-transparent text-lg p-0"
+        team_id={team_id}
+        title={title}
+      />
     </Card>
   );
 };

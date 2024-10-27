@@ -7,6 +7,7 @@ export type CarouselData = {
 };
 
 export interface Product {
+  team_id: number;
   title: string;
   description: string;
   url: string;

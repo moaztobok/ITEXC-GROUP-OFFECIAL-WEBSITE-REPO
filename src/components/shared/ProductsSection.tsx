@@ -5,10 +5,12 @@ import { Product } from "@/data/types";
 const ProductSection = ({
   label,
   title,
+  team_id,
   data
 }: {
   label: string;
   title: string;
+  team_id: number;
   data: Product[];
 }) => {
   return (
@@ -21,6 +23,7 @@ const ProductSection = ({
             {data.map((data, index) => (
               <FadeElement key={index}>
                 <CustomerCards
+                  team_id={team_id}
                   title={data.title}
                   description={data.description}
                   image={data.image}

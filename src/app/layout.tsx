@@ -9,6 +9,8 @@ import SubFooter from "@/components/shared/Footer";
 import { cn } from "@/lib/utils";
 import { Providers } from "@/providers/Providers";
 
+import { Toaster } from "sonner";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, "font-medium text-lg")}>
+        <Toaster />
         <Providers>
           <Navigation />
           {children}
