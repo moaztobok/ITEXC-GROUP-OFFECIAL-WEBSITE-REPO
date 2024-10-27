@@ -93,3 +93,20 @@ export const getTailwindStrokeColor = (pathname: string) => {
 // const textClass = getTailwindTextColor('studio');
 // const fillClass = getTailwindFillColor('studio');
 // const strokeClass = getTailwindStrokeColor('studio');
+
+export const getTeamId = (pathname: string): number => {
+  switch (pathname.toLowerCase()) {
+    case "/services/engineering":
+      return 7;
+    case "software":
+      return 7;
+    case "/services/branding":
+      return 6;
+    case "/services/erp":
+      return 1;
+    case "/services/hr":
+      return 5;
+    default:
+      return 1;
+  }
+};

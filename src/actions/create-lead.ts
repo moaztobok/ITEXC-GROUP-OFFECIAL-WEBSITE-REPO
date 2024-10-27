@@ -1,8 +1,13 @@
 "use server";
 
-import { CreateLeadSchemaType } from "@/components/shared/GetQuoteModal";
-
-export const CreateLead = async (data: CreateLeadSchemaType) => {
+export const CreateLead = async (data: {
+  team_id: string;
+  contact_name: string;
+  email_from: string;
+  phone?: string;
+  name: string;
+  description?: string;
+}) => {
   const formData = new FormData();
   console.log("data: ", data);
 
