@@ -15,7 +15,6 @@ export const truncateString = (title: string, maxLength: number): string => {
 export const getTailwindBackgroundColor = (pathname: string) => {
   switch (pathname.toLowerCase()) {
     case "/services/engineering":
-    case "software":
       return "bg-primary";
     case "/services/branding":
       return "bg-primary-studio";
