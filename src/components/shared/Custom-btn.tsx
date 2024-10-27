@@ -6,12 +6,13 @@ import { usePathname } from "next/navigation";
 
 export interface CustomButtonProps extends ButtonProps {
   label: string | ReactNode;
+  isSubmitting?: boolean;
 }
 
 export const CustomButton = React.forwardRef<
   HTMLButtonElement,
   CustomButtonProps
->(({ className, label, ...props }, ref) => {
+>(({ className, label, isSubmitting, ...props }, ref) => {
   const pathname = usePathname();
   console.log(pathname);
   return (
@@ -23,8 +24,9 @@ export const CustomButton = React.forwardRef<
         getTailwindBackgroundColor(pathname),
         className
       )}
+      disabled={isSubmitting}
     >
-      {label}
+      {isSubmitting ? "Submitting" : label}
     </Button>
   );
 });

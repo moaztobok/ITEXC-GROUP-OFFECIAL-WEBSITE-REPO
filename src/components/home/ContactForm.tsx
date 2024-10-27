@@ -87,7 +87,10 @@ const ContactForm = () => {
             />
           )}
         />
-        <CustomButton label="Submit" />
+        <CustomButton
+          label="Submit"
+          isSubmitting={form.formState.isSubmitting}
+        />
       </form>
     </Form>
   );
