@@ -135,6 +135,7 @@ export const carouselData: CarouselData[] = [
 
 export const customerData: Product[] = [
   {
+    team_id: 1,
     title: "ERP SOLUTIONS",
     description:
       "We deliver customized ERP systems that integrate your core business processes. Our solutions streamline operations, improve efficiency, and provide real-time insights for informed decision-making across finance, HR, supply chain, and more.",
@@ -143,6 +144,7 @@ export const customerData: Product[] = [
     serviceUrl: "/services/erp"
   },
   {
+    team_id: 6,
     title: "BRANDING & DESIGN STUDIO",
     description:
       "Our creative team develops strong brand identities that resonate with your audience. We create impactful logos, engaging websites, and consistent visual branding to enhance your market presence and drive customer engagement.",
@@ -151,6 +153,7 @@ export const customerData: Product[] = [
     serviceUrl: "/services/studio"
   },
   {
+    team_id: 5,
     title: "HR SERVICES",
     description:
       "We offer comprehensive HR solutions to simplify workforce management. From recruitment to performance tracking, our user-friendly systems support your HR team in nurturing talent and boosting organizational productivity.",
@@ -162,6 +165,7 @@ export const customerData: Product[] = [
 
 export const WebDevProducts: Product[] = [
   {
+    team_id: 7,
     title: "Custom Website Development",
     description:
       "Create a unique and tailored website that reflects your brand and meets your specific business needs.",
@@ -170,6 +174,7 @@ export const WebDevProducts: Product[] = [
     serviceUrl: "/#"
   },
   {
+    team_id: 7,
     title: "E-commerce Development",
     description:
       "Build an online store to sell products or services, complete with payment processing, inventory management, and shipping options.",
@@ -178,6 +183,7 @@ export const WebDevProducts: Product[] = [
     serviceUrl: "/#"
   },
   {
+    team_id: 7,
     title: "Content Management Systems (CMS)",
     description:
       "Develop a robust CMS that allows you to manage your website's content easily, ensuring flexibility and scalability.",
@@ -190,6 +196,7 @@ export const WebDevProducts: Product[] = [
 
 export const MobileDevProducts: Product[] = [
   {
+    team_id: 7,
     title: "Native Mobile App Development",
     description:
       "Create high-performance apps tailored for iOS and Android devices.",
@@ -199,6 +206,7 @@ export const MobileDevProducts: Product[] = [
     serviceUrl: "/#"
   },
   {
+    team_id: 7,
     title: "Hybrid Mobile App Development",
     description:
       "Build cross-platform apps using web technologies for faster development.",
@@ -208,6 +216,7 @@ export const MobileDevProducts: Product[] = [
     serviceUrl: "/#"
   },
   {
+    team_id: 7,
     title: "Mobile App Design and UI/UX",
     description:
       "Create visually appealing and user-friendly interfaces for your mobile apps.",
@@ -316,6 +325,7 @@ export const studioSteps: ProcessStep[] = [
 
 export const BrandingServices: Product[] = [
   {
+    team_id: 6,
     title: "Comprehensive Brand Development",
     description:
       "Craft a unique brand identity from scratch, including strategy, visual elements, and guidelines for consistency.",
@@ -325,6 +335,7 @@ export const BrandingServices: Product[] = [
     serviceUrl: "/#"
   },
   {
+    team_id: 6,
     title: "Design & Photography Services",
     description:
       "Enhance your existing brand with stunning visual content through expert design and professional photography tailored for brands looking to build upon their current identity.",
@@ -334,6 +345,7 @@ export const BrandingServices: Product[] = [
     serviceUrl: "/#"
   },
   {
+    team_id: 6,
     title: "Custom Design Solutions",
     description:
       "Tailor unique design services to fit your specific needs, enhancing your brand's visual storytelling.",
@@ -346,6 +358,7 @@ export const BrandingServices: Product[] = [
 
 export const ErpProducts: Product[] = [
   {
+    team_id: 1,
     title: "Odoo ERP Integration",
     description:
       "Seamlessly integrate Odoo ERP into your business operations, ensuring smooth data flow, automation, and alignment with existing processes.",
@@ -354,6 +367,7 @@ export const ErpProducts: Product[] = [
     serviceUrl: "/#"
   },
   {
+    team_id: 1,
     title: "Odoo Development",
     description:
       "Decoupling Odoo's, allowing you to build custom user interfaces for web, mobile, or other platforms while utilizing Odoo's powerful ERP features through APIs.",
@@ -362,6 +376,7 @@ export const ErpProducts: Product[] = [
     serviceUrl: "/#"
   },
   {
+    team_id: 1,
     title: "Custom ERP Development",
     description:
       "Develop a fully customized ERP system with advanced security and scalability, designed to meet your unique business requirements and ensure ultimate flexibility.",
@@ -372,6 +387,7 @@ export const ErpProducts: Product[] = [
 ];
 export const HrServices: Product[] = [
   {
+    team_id: 5,
     title: "HR Outsourcing",
     description:
       "Outsource your HR functions to ensure smooth operations, reduce costs, and stay compliant with regulations while focusing on core business activities.",
@@ -381,6 +397,7 @@ export const HrServices: Product[] = [
     serviceUrl: "/#"
   },
   {
+    team_id: 5,
     title: "Recruitment & Talent Acquisition",
     description:
       "Find, screen, and onboard the best talent efficiently with our recruitment and talent acquisition services.",
@@ -391,6 +408,7 @@ export const HrServices: Product[] = [
   },
 
   {
+    team_id: 5,
     title: "Employee Relations & Performance Management",
     description:
       "Improve employee relations and performance with structured appraisals, engagement strategies, and conflict resolution services.",

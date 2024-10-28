@@ -15,7 +15,7 @@ const Products = () => {
             {customerData.map((data, index) => (
               <FadeElement key={index}>
                 <CustomerCards
-                  team_id={1}
+                  team_id={data.team_id}
                   title={data.title}
                   description={data.description}
                   image={data.image}

@@ -24,7 +24,7 @@ const HeroSection = () => {
               className="text-lg border border-primary flex-1"
             />
             <CustomButton
-              label="How it works"
+              label="Learn More"
               className="text-lg text-foreground bg-transparent flex-1 outline-2 hover:bg-white/20 outline-white text-white border"
             />
           </div>

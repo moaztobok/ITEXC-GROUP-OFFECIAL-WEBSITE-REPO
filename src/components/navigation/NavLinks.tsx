@@ -32,9 +32,7 @@ export function NavigationItems() {
             <UnitLink unit={unit} key={index} />
           ))}
         </NavDropDown>
-        <NavLink href="/carrers" title="Carrers" />
         <NavLink href="/about" title="About us" />
-        <NavLink href="/consulting" title="Consulting" />
       </NavigationMenuList>
     </NavigationMenu>
   );

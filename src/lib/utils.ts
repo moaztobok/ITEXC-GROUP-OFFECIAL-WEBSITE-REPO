@@ -15,7 +15,6 @@ export const truncateString = (title: string, maxLength: number): string => {
 export const getTailwindBackgroundColor = (pathname: string) => {
   switch (pathname.toLowerCase()) {
     case "/services/engineering":
-    case "software":
       return "bg-primary";
     case "/services/branding":
       return "bg-primary-studio";
@@ -108,5 +107,20 @@ export const getTeamId = (pathname: string): number => {
       return 5;
     default:
       return 1;
+  }
+};
+
+export const teamlead = (team: number): string => {
+  switch (team) {
+    case 6:
+      return "Studio Sales team";
+    case 7:
+      return "IT Sales team";
+    case 5:
+      return "HR Managment team";
+    case 1:
+      return "ERP Sales team";
+    default:
+      return "Our team";
   }
 };
