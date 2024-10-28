@@ -14,7 +14,7 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ITEXC GROUP",
+  title: "ITEXC Group | Integrated Business Solutions Company",
   description:
     "ITEXC GROUP is a digital transformation company that provides innovative solutions to businesses."
 };

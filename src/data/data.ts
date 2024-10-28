@@ -29,19 +29,19 @@ export const units = [
     imageUrl: "/icons/group.svg"
   },
   {
-    title: "Itexc studio",
+    title: "Studio",
     desc: "Craft digital experiences, impactful branding.",
     url: "/units/studio",
     imageUrl: "/icons/studio.svg"
   },
   {
-    title: "Itexc erp",
+    title: "Erp",
     desc: "Streamline core operations with custom ERP.",
     url: "/units/erp",
     imageUrl: "/icons/erp.svg"
   },
   {
-    title: "Itexc hr",
+    title: "Hr",
     desc: "Optimize workforce management solutions.",
     url: "/units/hr",
     imageUrl: "/icons/hr.svg"
