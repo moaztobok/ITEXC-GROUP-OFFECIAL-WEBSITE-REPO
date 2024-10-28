@@ -12,8 +12,8 @@ const HeroSection = () => {
             <span className="text-primary p-4">Experts</span>
           </h1>
           <p className="md:w-1/2  md:text-left text text-center  pointer-events-none">
-            Expert software engineering transforms ideas into robust, scalable
-            solutions, driving business growth and technological advancement.
+            Our core development team turns complex challenges into elegant
+            solutions, building software that powers enterprise transformation
           </p>
         </div>
       </FadeElement>
