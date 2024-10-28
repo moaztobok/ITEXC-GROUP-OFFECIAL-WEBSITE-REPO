@@ -200,7 +200,7 @@ export function GetQuoteModal({
               control={form.control}
               name="email_from"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="md:col-span-1 col-span-2">
                   <FormLabel className="text-base">
                     Email <span className="text-red-500">*</span>
                   </FormLabel>
@@ -222,7 +222,7 @@ export function GetQuoteModal({
               control={form.control}
               name="phone"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="md:col-span-1 col-span-2">
                   <FormLabel className="text-base">
                     Phone <span className="text-red-500">*</span>
                   </FormLabel>

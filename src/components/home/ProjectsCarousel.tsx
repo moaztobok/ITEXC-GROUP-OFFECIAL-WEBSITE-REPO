@@ -13,11 +13,19 @@ import { cn, truncateString } from "@/lib/utils";
 import { Dot } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ProjectsCarousel = ({ data }: { data: CarouselData[] }) => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+
+  // Update `current` index when slide is scrolled manually
+  useEffect(() => {
+    if (api) {
+      api.on("select", () => setCurrent(api.selectedScrollSnap()));
+    }
+  }, [api]);
+
   return (
     <Carousel setApi={setApi} className="max-w-[100vw] md:mt-10 relative">
       <CarouselContent className="gap-6 md:mx-52 lg:mx-96 my-auto relative">
@@ -44,7 +52,7 @@ const ProjectsCarousel = ({ data }: { data: CarouselData[] }) => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="my-4 bottom-0 flex md:hidden z-50">
+      <div className="my-4 bottom-0 flex md:hidden z-50 justify-center">
         {data.map((_, dotIndex) => (
           <Dot
             size={42}
