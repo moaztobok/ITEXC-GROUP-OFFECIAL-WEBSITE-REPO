@@ -57,6 +57,7 @@ const page = () => {
               "Producers of high-quality designs and imegry for various projects"
           }
         ]}
+        hiring
       />
     </main>
   );
