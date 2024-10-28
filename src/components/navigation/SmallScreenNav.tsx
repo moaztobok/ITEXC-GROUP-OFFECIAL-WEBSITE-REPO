@@ -42,10 +42,10 @@ const menuItems: Item[] = [
   {
     label: "Units",
     subItems: [
-      { label: "Engineering", href: "/units/category1" },
-      { label: "Studio", href: "/units/category2" },
-      { label: "Erp", href: "/units/category3" },
-      { label: "Hr", href: "/units/category3" }
+      { label: "Engineering", href: "/units/dev" },
+      { label: "Studio", href: "/units/studio" },
+      { label: "Erp", href: "/units/erp" },
+      { label: "Hr", href: "/units/hr" }
     ]
   },
   { label: "About", href: "/about" },
