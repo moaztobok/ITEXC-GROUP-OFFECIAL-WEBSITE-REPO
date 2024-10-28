@@ -11,8 +11,8 @@ interface VortexProps {
   rangeY?: number;
   baseHue?: number;
   baseSpeed?: number;
-  rangeSpeed?: number;
   rangeHue?: number;
+  rangeSpeed?: number;
   baseRadius?: number;
   rangeRadius?: number;
   backgroundColor?: string;
@@ -184,7 +184,11 @@ export const Vortex = (props: VortexProps) => {
     return x > canvas.width || x < 0 || y > canvas.height || y < 0;
   };
 
-  const resize = (canvas: HTMLCanvasElement) => {
+  const resize = (
+    canvas: HTMLCanvasElement,
+    // eslint-disable-next-line no-unused-vars
+    ctx?: CanvasRenderingContext2D
+  ) => {
     const { innerWidth, innerHeight } = window;
 
     canvas.width = innerWidth;

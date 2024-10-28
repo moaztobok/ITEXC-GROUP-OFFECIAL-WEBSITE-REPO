@@ -92,3 +92,35 @@ export const getTailwindStrokeColor = (pathname: string) => {
 // const textClass = getTailwindTextColor('studio');
 // const fillClass = getTailwindFillColor('studio');
 // const strokeClass = getTailwindStrokeColor('studio');
+
+export const getTeamId = (pathname: string): number => {
+  switch (pathname.toLowerCase()) {
+    case "/services/engineering":
+      return 7;
+    case "software":
+      return 7;
+    case "/services/branding":
+      return 6;
+    case "/services/erp":
+      return 1;
+    case "/services/hr":
+      return 5;
+    default:
+      return 1;
+  }
+};
+
+export const teamlead = (team: number): string => {
+  switch (team) {
+    case 6:
+      return "Studio Sales team";
+    case 7:
+      return "IT Sales team";
+    case 5:
+      return "HR Managment team";
+    case 1:
+      return "ERP Sales team";
+    default:
+      return "Our team";
+  }
+};

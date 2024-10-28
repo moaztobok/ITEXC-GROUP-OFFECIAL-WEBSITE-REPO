@@ -1,3 +1,4 @@
+"use client";
 import { Vortex } from "@/components/ui/vortex";
 const TdGraphics = () => {
   return (
