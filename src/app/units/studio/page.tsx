@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import Introduction from "../_components/Introduction";
 import Responsibilities from "../_components/Responsibilities";
 import Structure from "../_components/Structure";
+import JoinUs from "../_components/JoinUs";
 
 export const metadata: Metadata = {
   title: "ITEXC Studio",
@@ -59,6 +60,7 @@ const page = () => {
         ]}
         hiring
       />
+      <JoinUs />
     </main>
   );
 };

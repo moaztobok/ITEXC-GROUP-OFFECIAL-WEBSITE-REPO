@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import Responsibilities from "../_components/Responsibilities";
 import Introduction from "../_components/Introduction";
 import Structure from "../_components/Structure";
+import JoinUs from "../_components/JoinUs";
 
 export const metadata: Metadata = {
   title: "ITEXC ERP Solutions",
@@ -56,6 +57,7 @@ const page = () => {
           }
         ]}
       />
+      <JoinUs />
     </main>
   );
 };
