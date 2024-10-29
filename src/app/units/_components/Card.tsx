@@ -8,7 +8,7 @@ const Card = ({
   description: string;
 }) => {
   return (
-    <div className="w-[580px] min-h-60 border border-gray-300 p-8 flex flex-col gap-6">
+    <div className="md:w-[580px] w-full min-h-60 border border-gray-300 p-8 flex flex-col gap-6">
       <div className="p-1 w-fit">
         <Box className="w-10 h-10" />
       </div>
