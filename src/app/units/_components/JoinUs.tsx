@@ -12,7 +12,7 @@ const JoinUs = ({ type }: { type: "dev" | "erp" | "hr" | "studio" }) => {
         section: "bg-white"
       }}
     >
-      <FadeElement className="flex md:flex-row flex-col-reverse md:gap-0 gap-10 w-full">
+      <FadeElement className="flex md:flex-row flex-col-reverse md:gap-0 gap-4 w-full">
         <div className="flex flex-col gap-6 md:flex-1">
           <div className="flex flex-col gap-4">
             <h1 className="text-3xl font-semibold">Join our team!</h1>
@@ -31,7 +31,14 @@ const JoinUs = ({ type }: { type: "dev" | "erp" | "hr" | "studio" }) => {
           </div>
         </div>
         <div className="flex-1 flex items-center md:justify-center justify-start">
-          <Image src={imageSrc} alt="itexc logo" height={135} width={320} />
+          <div className="relative md:w-80 w-64 h-36">
+            <Image
+              src={imageSrc}
+              alt="itexc logo"
+              fill={true}
+              className="object-contain"
+            />
+          </div>
         </div>
       </FadeElement>
     </SectionWrapper>
