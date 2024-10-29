@@ -23,13 +23,13 @@ const Responsibilities = ({
           <p className="text-lg font-medium">{description}</p>
         </div>
       </FadeElement>
-      <FadeElement className="flex-1">
+      <FadeElement className="flex-1 md:block hidden">
         <div className="relative w-full h-[934px]">
           <Image
             src={image}
             alt="image representing the unit domain"
             fill={true}
-            className="object-cover"
+            className="object-contain"
           />
         </div>
       </FadeElement>
