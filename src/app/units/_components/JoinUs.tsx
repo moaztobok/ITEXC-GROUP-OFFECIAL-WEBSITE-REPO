@@ -1,17 +1,19 @@
 import { FadeElement } from "@/components/magicui/fade-text";
 import SectionWrapper from "@/components/shared/SectionWrapper";
 import { Button } from "@/components/ui/button";
+import { getLogo } from "@/lib/utils";
 import Image from "next/image";
 
-const JoinUs = () => {
+const JoinUs = ({ type }: { type: "dev" | "erp" | "hr" | "studio" }) => {
+  const imageSrc = getLogo(type);
   return (
     <SectionWrapper
       className={{
         section: "bg-white"
       }}
     >
-      <FadeElement className="flex flex-row w-full">
-        <div className="flex flex-col gap-6 flex-1">
+      <FadeElement className="flex md:flex-row flex-col-reverse md:gap-0 gap-10 w-full">
+        <div className="flex flex-col gap-6 md:flex-1">
           <div className="flex flex-col gap-4">
             <h1 className="text-3xl font-semibold">Join our team!</h1>
             <p className="text-lg">
@@ -28,8 +30,8 @@ const JoinUs = () => {
             </Button>
           </div>
         </div>
-        <div className="relative flex-1">
-          <Image src="/Group- full-lockup.svg" alt="itexc logo" fill={true} />
+        <div className="flex-1 flex items-center md:justify-center justify-start">
+          <Image src={imageSrc} alt="itexc logo" height={135} width={320} />
         </div>
       </FadeElement>
     </SectionWrapper>

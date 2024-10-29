@@ -57,7 +57,7 @@ const page = () => {
           }
         ]}
       />
-      <JoinUs />
+      <JoinUs type="erp" />
     </main>
   );
 };

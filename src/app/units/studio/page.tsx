@@ -60,7 +60,7 @@ const page = () => {
         ]}
         hiring
       />
-      <JoinUs />
+      <JoinUs type="studio" />
     </main>
   );
 };

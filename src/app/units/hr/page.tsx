@@ -56,7 +56,7 @@ const page = () => {
           }
         ]}
       />
-      <JoinUs />
+      <JoinUs type="hr" />
     </main>
   );
 };

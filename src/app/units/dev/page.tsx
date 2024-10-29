@@ -78,7 +78,7 @@ const page = () => {
           }
         ]}
       />
-      <JoinUs />
+      <JoinUs type="dev" />
     </main>
   );
 };

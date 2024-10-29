@@ -124,3 +124,16 @@ export const teamlead = (team: number): string => {
       return "Our team";
   }
 };
+
+export const getLogo = (type: "dev" | "erp" | "hr" | "studio"): string => {
+  switch (type) {
+    case "dev":
+      return "/Group- full-lockup.svg";
+    case "erp":
+      return "/Erp- full-lockup.svg";
+    case "hr":
+      return "/Hr- full-lockup.svg";
+    case "studio":
+      return "/Studio- full-lockup.svg";
+  }
+};
