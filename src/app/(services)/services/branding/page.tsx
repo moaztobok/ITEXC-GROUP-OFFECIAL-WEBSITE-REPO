@@ -6,6 +6,13 @@ import MaterialDesign from "./_components/Branding";
 import ProductDesign from "./_components/ProductDesign";
 import StudioProcess from "./_components/StudioProcess";
 import StudioServices from "./_components/StudioServices";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ITEXC Group | Branding & Design",
+  description:
+    "Our branding experts at ITEXC Group create transformative identities that capture the essence of your brand and drive recognition."
+};
 
 const page = () => {
   return (
