@@ -1,6 +1,6 @@
 import { FadeElement } from "@/components/magicui/fade-text";
+import { CustomButton } from "@/components/shared/Custom-btn";
 import SectionWrapper from "@/components/shared/SectionWrapper";
-import { Button } from "@/components/ui/button";
 import { getLogo } from "@/lib/utils";
 import Image from "next/image";
 
@@ -22,12 +22,11 @@ const JoinUs = ({ type }: { type: "dev" | "erp" | "hr" | "studio" }) => {
             </p>
           </div>
           <div>
-            <Button
+            <CustomButton
               variant="ghost"
-              className="border border-black text-base rounded-none h-12 w-40 hover:bg-gray-200"
-            >
-              Join Our Team
-            </Button>
+              className="text-lg text-foreground bg-transparent flex-1 outline-2 hover:bg-white/20 outline-foreground border"
+              label="Apply Now"
+            />
           </div>
         </div>
         <div className="flex-1 flex items-center md:justify-center justify-start">

@@ -26,7 +26,7 @@ const TdGraphics = () => {
         ></iframe>
       ) : (
         <GridPattern
-          className="opacity-30 stroke-white/30 "
+          className=" stroke-white/10"
           rectangleClassName="fill-primary-hr"
         />
       )}
