@@ -5,67 +5,67 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://itexc-group-demo.vercel.app/",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 1.0
     },
     {
-      url: "https://itexc-group-demo.vercel.app/services/branding",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/services/branding`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8
     },
     {
-      url: "https://itexc-group-demo.vercel.app/services/engineering",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/services/engineering`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8
     },
     {
-      url: "https://itexc-group-demo.vercel.app/services/erp",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/services/erp`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8
     },
     {
-      url: "https://itexc-group-demo.vercel.app/services/hr",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/services/hr`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8
     },
     {
-      url: "https://itexc-group-demo.vercel.app/about",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7
     },
     {
-      url: "https://itexc-group-demo.vercel.app/units/dev",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/units/dev`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6
     },
     {
-      url: "https://itexc-group-demo.vercel.app/units/erp",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/units/erp`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6
     },
     {
-      url: "https://itexc-group-demo.vercel.app/units/hr",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/units/hr`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6
     },
     {
-      url: "https://itexc-group-demo.vercel.app/units/studio",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/units/studio`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6
     },
     {
-      url: "https://itexc-group-demo.vercel.app/_not-found",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/_not-found`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5

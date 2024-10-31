@@ -17,7 +17,7 @@ export const CreateLead = async (data: {
   console.log("formData: ", formData);
   try {
     const response = await fetch(
-      "https://www.itexcgroup.com/website/form/crm.lead",
+      `${process.env.NEXT_PUBLIC_API_URL}/website/form/crm.lead`,
       {
         method: "POST",
         body: formData
