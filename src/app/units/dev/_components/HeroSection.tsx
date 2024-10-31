@@ -3,7 +3,7 @@ import TdGraphics from "./TdGraphics";
 
 const HeroSection = () => {
   return (
-    <section className="h-screen bg-foreground text-background relative overflow-hidden">
+    <section className="h-screen bg-black text-background relative overflow-hidden">
       <TdGraphics />
       <FadeElement className="h-full">
         <div className="p-4 max-w-[1440px] mx-auto flex flex-col justify-center h-full flex-1 gap-2 md:gap-4  items-start relative overflow-hidden pointer-events-none ">
