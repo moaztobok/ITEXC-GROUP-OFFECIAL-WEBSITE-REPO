@@ -12,9 +12,7 @@ const Projects = () => {
         <div className="flex flex-col gap-6">
           <div className="wrapper flex flex-col gap-6 py-0 my-0">
             <span className="font-semibold">Our Case studies</span>
-            <h2 className="justify-start block md:hidden Title">
-              Latest projects
-            </h2>
+            <h2 className="justify-start block Title">Latest projects</h2>
           </div>
           <ProjectsCarousel data={carouselData} />
           <div className="wrapper my-0 md:px-8 md:items-center gap-4 md:mt-10 flex-col md:flex-row items-start  font-bold flex md:justify-between">

@@ -8,9 +8,7 @@ const Products = () => {
       <FadeElement>
         <div className="flex flex-col wrapper gap-6">
           <span className="font-semibold">Our Customers</span>
-          <h2 className="justify-start block md:hidden Title">
-            Solutions for Success
-          </h2>
+          <h2 className="justify-start block Title">Solutions for Success</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {customerData.map((data, index) => (
               <FadeElement key={index}>

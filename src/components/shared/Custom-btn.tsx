@@ -1,6 +1,6 @@
 "use client";
 import { cn, getTailwindBackgroundColor } from "@/lib/utils";
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 import { Button, ButtonProps } from "../ui/button";
 import { usePathname } from "next/navigation";
 
@@ -14,7 +14,15 @@ export const CustomButton = React.forwardRef<
   CustomButtonProps
 >(({ className, label, isSubmitting, ...props }, ref) => {
   const pathname = usePathname();
-  console.log(pathname);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null; // or a loading indicator, or a default view
+  }
   return (
     <Button
       ref={ref}

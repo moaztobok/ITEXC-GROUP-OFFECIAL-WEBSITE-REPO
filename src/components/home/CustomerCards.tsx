@@ -23,7 +23,7 @@ const CustomerCards = ({
           height={100}
           alt={title}
           src={image}
-          className="object-cover aspect-[6/4]  top-0 left-0"
+          className="object-cover aspect-[6/4] top-0 left-0"
         />
       </div>
       <Link href={serviceUrl} className="text-lg font-semibold hover:underline">
