@@ -122,7 +122,7 @@ export function GetQuoteModal({
           {buttonLabel} <ArrowRight className="ml-2" size={16} />
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-3xl sm:rounded-none">
+      <DialogContent className="sm:max-w-3xl sm:rounded-none max-h-screen overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-xl">Estimate your project</DialogTitle>
           <DialogDescription>

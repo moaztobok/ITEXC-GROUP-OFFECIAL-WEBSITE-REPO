@@ -6,9 +6,11 @@ import { useMediaQuery } from "usehooks-ts";
 const TdGraphics = () => {
   const [isClient, setIsClient] = useState(false);
   const matches = useMediaQuery("(min-width: 768px)");
-
   useEffect(() => {
     setIsClient(true);
+    return () => {
+      setIsClient(false);
+    };
   }, []);
 
   if (!isClient) {

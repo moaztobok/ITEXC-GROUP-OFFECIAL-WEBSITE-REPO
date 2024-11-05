@@ -9,8 +9,10 @@ const TdGraphics = () => {
 
   useEffect(() => {
     setIsClient(true);
+    return () => {
+      setIsClient(false);
+    };
   }, []);
-
   if (!isClient) {
     return null; // or a loading indicator, or a default view
   }

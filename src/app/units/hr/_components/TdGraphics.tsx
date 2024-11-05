@@ -9,6 +9,9 @@ const TdGraphics = () => {
 
   useEffect(() => {
     setIsClient(true);
+    return () => {
+      setIsClient(false);
+    };
   }, []);
 
   if (!isClient) {
