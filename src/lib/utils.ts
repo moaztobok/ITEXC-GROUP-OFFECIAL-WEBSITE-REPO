@@ -22,6 +22,14 @@ export const getTailwindBackgroundColor = (pathname: string) => {
       return "bg-primary-erp";
     case "/services/hr":
       return "bg-primary-hr";
+    case "/units/dev":
+      return "bg-primary";
+    case "/units/studio":
+      return "bg-primary-studio";
+    case "/units/erp":
+      return "bg-primary-erp";
+    case "/units/hr":
+      return "bg-primary-hr";
     default:
       return "bg-primary";
   }

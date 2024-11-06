@@ -24,16 +24,8 @@ const page = () => {
       />
       <Responsibilities
         title="Responsibilities and Importance"
-        description="The ERP Integration division, known as ITEXC ERP, specializes in
-            implementing and customizing Enterprise Resource Planning systems
-            for ITEXC Group's clients. This division plays a crucial role in
-            helping organizations streamline their business processes, improve
-            efficiency, and gain better control over their operations through
-            integrated ERP solutions. ITEXC ERP's expertise spans various ERP
-            platforms, ensuring that clients receive tailored solutions that
-            best fit their unique business needs and drive digital
-            transformation."
-        image="https://images.unsplash.com/photo-1653549892798-c8596ad08ee6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGN1YmUlMjAzZHxlbnwwfDF8MHx8fDA%3D"
+        description="ITEXC ERP specializes in implementing and customizing ERP systems to help organizations streamline processes, enhance efficiency, and gain operational control. With expertise across various platforms, ITEXC ERP provides tailored solutions that drive digital transformation and meet clients' unique business needs."
+        image="https://images.unsplash.com/photo-1634696684126-462b1a767e22?q=80&w=2083&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
       <Structure
         title="Division Structure"

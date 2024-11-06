@@ -24,15 +24,8 @@ const page = () => {
       />
       <Responsibilities
         title="Responsibilities and Importance"
-        description="The Design Studio, as part of ITEXC Studio, is responsible for
-            creating visually appealing and user-friendly designs for ITEXC
-            Group's software products and client projects. This division
-            plays a crucial role in enhancing user experience and ensuring that
-            all products meet high aesthetic standards. From user interface
-            design to branding and visual identity creation, the Design Studio
-            ensures that ITEXC Group's solutions are not only functional
-            but also visually impressive and intuitive to use."
-        image="https://images.unsplash.com/photo-1653549892798-c8596ad08ee6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGN1YmUlMjAzZHxlbnwwfDF8MHx8fDA%3D"
+        description="ITEXC Studio’s Design Studio creates visually appealing, user-friendly designs for ITEXC Group’s products and client projects. Focusing on user experience, it delivers high aesthetic standards across UI, branding, and visual identity, ensuring ITEXC Group’s solutions are both functional and visually engaging."
+        image="https://images.unsplash.com/photo-1577645113639-32537a4a938b"
       />
       <Structure
         title="Division Structure"

@@ -12,11 +12,7 @@ const Responsibilities = ({
   image: string;
 }) => {
   return (
-    <SectionWrapper
-      className={{
-        section: "bg-white"
-      }}
-    >
+    <SectionWrapper>
       <FadeElement className="flex-1">
         <div className="flex gap-4 flex-col justify-center h-full">
           <h1 className="font-bold text-3xl">{title}</h1>
@@ -24,12 +20,13 @@ const Responsibilities = ({
         </div>
       </FadeElement>
       <FadeElement className="flex-1 md:block hidden">
-        <div className="relative w-full h-[934px]">
+        <div className="relative w-full h-full">
           <Image
             src={image}
             alt="image representing the unit domain"
-            fill={true}
-            className="object-contain"
+            width={800}
+            height={800}
+            className="object-cover w-full aspect-square"
           />
         </div>
       </FadeElement>
