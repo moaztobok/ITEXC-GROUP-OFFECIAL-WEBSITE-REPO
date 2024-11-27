@@ -13,9 +13,6 @@ const AcademyGraphics = () => {
         sizes="400px"
         alt="circle"
       />
-      {/* <h2 className="p-4 text-2xl font-semibold bg-[#E41A3A] text-background">
-          Byte By Byte , Incubating excellence
-        </h2> */}
     </FadeElement>
   );
 };
