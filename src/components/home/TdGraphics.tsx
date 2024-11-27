@@ -1,14 +1,14 @@
-"use client";
+import Spline from "@splinetool/react-spline/next";
 
 const TdGraphics = () => {
   return (
     <>
-      <iframe
-        src="https://my.spline.design/retrofuturismbganimation-05267393b9e06aacc4c5fed930104250/"
+      <Spline
+        scene="https://prod.spline.design/8qzTiuq3dntoZnVN/scene.splinecode"
         className="absolute h-full -z-1 select-none"
-        width="120%"
-        height="120%"
+        style={{ width: "120%", height: "120%" }}
       />
+      \
     </>
   );
 };
