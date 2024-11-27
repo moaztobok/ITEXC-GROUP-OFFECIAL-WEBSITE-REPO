@@ -8,7 +8,6 @@ const TdGraphics = () => {
         className="absolute h-full -z-1 select-none"
         style={{ width: "120%", height: "120%" }}
       />
-      \
     </>
   );
 };
